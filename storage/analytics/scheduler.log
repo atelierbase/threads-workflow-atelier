@@ -1,0 +1,5 @@
+
+2026-05-26T16:48:19.266402+09:00 [threads] START slot=夜 dry_run=True skip_jitter=False
+2026-05-26T16:48:19.266477+09:00 [threads] credentials: file /Users/hirotomo.ishii/.config/threads-workflow/threads-credentials.json
+2026-05-26T16:48:19.266941+09:00 [threads] Text preview: AI に働いてもらって浮いた時間、何に使うかが大事ですよね。... (179 chars)
+2026-05-26T16:48:19.266982+09:00 [threads] DRY RUN - skipping actual post
