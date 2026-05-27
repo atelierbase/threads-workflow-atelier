@@ -11,3 +11,12 @@
 2026-05-27T08:28:23.300590+09:00 [threads] container_id=17890126218511951
 2026-05-27T08:28:29.308088+09:00 [threads] POSTED thread_id=18002899721926625
 2026-05-27T08:28:29.308941+09:00 [threads] DONE moved 2026-05-27-001 to posted
+2026-05-27T20:51:17.003973+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-27T20:51:17.004061+09:00 [threads] jitter=816s
+2026-05-27T21:04:53.004305+09:00 [threads] credentials: env vars
+2026-05-27T21:04:53.004943+09:00 [threads] Text preview: 正直に書きます。
+
+昨日の夜、CLAUDE.md の書き方で... (184 chars)
+2026-05-27T21:04:55.736598+09:00 [threads] container_id=17890221321511951
+2026-05-27T21:05:01.147969+09:00 [threads] POSTED thread_id=18103169108107473
+2026-05-27T21:05:01.148719+09:00 [threads] DONE moved 2026-05-27-003 to posted
