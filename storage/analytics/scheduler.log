@@ -20,3 +20,12 @@
 2026-05-27T21:04:55.736598+09:00 [threads] container_id=17890221321511951
 2026-05-27T21:05:01.147969+09:00 [threads] POSTED thread_id=18103169108107473
 2026-05-27T21:05:01.148719+09:00 [threads] DONE moved 2026-05-27-003 to posted
+2026-05-27T23:45:13.563054+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-27T23:45:13.563150+09:00 [threads] jitter=846s
+2026-05-27T23:59:19.563449+09:00 [threads] credentials: env vars
+2026-05-27T23:59:19.564097+09:00 [threads] Text preview: LP を9回書き直して、9回ボツにしました。
+
+「響かない」... (221 chars)
+2026-05-27T23:59:21.944332+09:00 [threads] container_id=17890247256511951
+2026-05-27T23:59:27.809241+09:00 [threads] POSTED thread_id=18589152868033807
+2026-05-27T23:59:27.810122+09:00 [threads] DONE moved 2026-05-28-003 to posted
