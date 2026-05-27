@@ -29,3 +29,11 @@
 2026-05-27T23:59:21.944332+09:00 [threads] container_id=17890247256511951
 2026-05-27T23:59:27.809241+09:00 [threads] POSTED thread_id=18589152868033807
 2026-05-27T23:59:27.810122+09:00 [threads] DONE moved 2026-05-28-003 to posted
+2026-05-28T03:38:04.550340+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-28T03:38:04.550419+09:00 [threads] jitter=87s
+2026-05-28T03:39:31.550633+09:00 [threads] credentials: env vars
+2026-05-28T03:39:31.551118+09:00 [threads] Text preview: 1日で1万インプ出た投稿があったんですが、
+売上には1円もつ... (176 chars)
+2026-05-28T03:39:33.448706+09:00 [threads] container_id=17890278900511951
+2026-05-28T03:39:38.145937+09:00 [threads] POSTED thread_id=18118076416741649
+2026-05-28T03:39:38.146583+09:00 [threads] DONE moved 2026-05-29-003 to posted
