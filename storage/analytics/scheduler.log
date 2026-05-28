@@ -37,3 +37,12 @@
 2026-05-28T03:39:33.448706+09:00 [threads] container_id=17890278900511951
 2026-05-28T03:39:38.145937+09:00 [threads] POSTED thread_id=18118076416741649
 2026-05-28T03:39:38.146583+09:00 [threads] DONE moved 2026-05-29-003 to posted
+2026-05-28T20:55:21.016472+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-28T20:55:21.016564+09:00 [threads] jitter=867s
+2026-05-28T21:09:48.016798+09:00 [threads] credentials: env vars
+2026-05-28T21:09:48.017370+09:00 [threads] Text preview: X と Threads、同じテーマで投稿してみました。
+
+X... (185 chars)
+2026-05-28T21:09:50.553121+09:00 [threads] container_id=17890388052511951
+2026-05-28T21:09:56.238314+09:00 [threads] POSTED thread_id=17918770152164213
+2026-05-28T21:09:56.239137+09:00 [threads] DONE moved 2026-05-30-003 to posted
