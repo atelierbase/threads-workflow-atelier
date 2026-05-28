@@ -46,3 +46,11 @@ X... (185 chars)
 2026-05-28T21:09:50.553121+09:00 [threads] container_id=17890388052511951
 2026-05-28T21:09:56.238314+09:00 [threads] POSTED thread_id=17918770152164213
 2026-05-28T21:09:56.239137+09:00 [threads] DONE moved 2026-05-30-003 to posted
+2026-05-29T02:09:03.524078+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-29T02:09:03.524168+09:00 [threads] jitter=608s
+2026-05-29T02:19:11.524377+09:00 [threads] credentials: env vars
+2026-05-29T02:19:11.525018+09:00 [threads] Text preview: プロフィールに書いている「AI に働かせて自分は寝る」、
+半... (193 chars)
+2026-05-29T02:19:14.994038+09:00 [threads] container_id=17890431819511951
+2026-05-29T02:19:20.466758+09:00 [threads] POSTED thread_id=18050674988760192
+2026-05-29T02:19:20.467416+09:00 [threads] DONE moved 2026-05-31-003 to posted
