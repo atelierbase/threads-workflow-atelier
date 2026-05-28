@@ -54,3 +54,11 @@ X... (185 chars)
 2026-05-29T02:19:14.994038+09:00 [threads] container_id=17890431819511951
 2026-05-29T02:19:20.466758+09:00 [threads] POSTED thread_id=18050674988760192
 2026-05-29T02:19:20.467416+09:00 [threads] DONE moved 2026-05-31-003 to posted
+2026-05-29T04:46:28.607045+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-29T04:46:28.607133+09:00 [threads] jitter=483s
+2026-05-29T04:54:31.607373+09:00 [threads] credentials: env vars
+2026-05-29T04:54:31.607946+09:00 [threads] Text preview: SNS でフォロワーが増えても、
+売上に直結しないって、最近... (210 chars)
+2026-05-29T04:54:35.455803+09:00 [threads] container_id=17890449498511951
+2026-05-29T04:54:42.241038+09:00 [threads] POSTED thread_id=18101932565044222
+2026-05-29T04:54:42.241668+09:00 [threads] DONE moved 2026-06-01-003 to posted
