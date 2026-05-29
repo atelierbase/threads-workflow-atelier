@@ -62,3 +62,12 @@ X... (185 chars)
 2026-05-29T04:54:35.455803+09:00 [threads] container_id=17890449498511951
 2026-05-29T04:54:42.241038+09:00 [threads] POSTED thread_id=18101932565044222
 2026-05-29T04:54:42.241668+09:00 [threads] DONE moved 2026-06-01-003 to posted
+2026-05-29T19:58:42.623661+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-29T19:58:42.623750+09:00 [threads] jitter=92s
+2026-05-29T20:00:14.623997+09:00 [threads] credentials: env vars
+2026-05-29T20:00:14.624590+09:00 [threads] Text preview: X と Threads、両方運用してみて気づいたこと。
+
+X... (217 chars)
+2026-05-29T20:00:17.834648+09:00 [threads] container_id=17890540203511951
+2026-05-29T20:00:23.923490+09:00 [threads] POSTED thread_id=18104534527796822
+2026-05-29T20:00:23.924098+09:00 [threads] DONE moved 2026-06-02-003 to posted
