@@ -71,3 +71,7 @@ X... (217 chars)
 2026-05-29T20:00:17.834648+09:00 [threads] container_id=17890540203511951
 2026-05-29T20:00:23.923490+09:00 [threads] POSTED thread_id=18104534527796822
 2026-05-29T20:00:23.924098+09:00 [threads] DONE moved 2026-06-02-003 to posted
+2026-05-29T23:17:37.142726+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-29T23:17:37.142806+09:00 [threads] jitter=376s
+2026-05-29T23:23:53.143042+09:00 [threads] credentials: env vars
+2026-05-29T23:23:53.143428+09:00 [threads] No pending post for slot=夜
