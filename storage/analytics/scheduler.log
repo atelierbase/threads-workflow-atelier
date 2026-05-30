@@ -87,3 +87,7 @@ X... (217 chars)
 2026-05-30T19:24:34.034017+09:00 [threads] jitter=379s
 2026-05-30T19:30:53.034222+09:00 [threads] credentials: env vars
 2026-05-30T19:30:53.034584+09:00 [threads] No pending post for slot=夜
+2026-05-30T23:54:32.302864+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-30T23:54:32.302958+09:00 [threads] jitter=271s
+2026-05-30T23:59:03.303208+09:00 [threads] credentials: env vars
+2026-05-30T23:59:03.303648+09:00 [threads] No pending post for slot=夜
