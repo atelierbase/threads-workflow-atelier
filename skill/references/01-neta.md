@@ -168,7 +168,7 @@ x-workflow と同じネタを Threads 用に使う場合：
 
 ## 後処理
 
-ネタリストを `~/atlier-base-v1/threads-workflow-repo/storage/stocks/drafts.md` に追記。
+ネタリストを `~/atlier-base-v1/projects/sns-auto-post/threads/storage/stocks/drafts.md` に追記。
 次フェーズ「生成」でこれを元に投稿文を作成。
 
 ## 注意

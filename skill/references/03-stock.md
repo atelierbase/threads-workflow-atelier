@@ -9,7 +9,7 @@
 | 場所 | パス | 役割 |
 |---|---|---|
 | **GitHub（真実のソース）** | `atelierbase/threads-workflow-atelier/storage/stocks/` | GitHub Actions が直接読む |
-| ローカル（作業バッファ） | `~/atlier-base-v1/threads-workflow-repo/storage/stocks/` | 私が生成 → push する場所 |
+| ローカル（作業バッファ） | `~/atlier-base-v1/projects/sns-auto-post/threads/storage/stocks/` | 私が生成 → push する場所 |
 | スキル内（参考） | `~/.claude/skills/threads-workflow/storage/stocks/` | スキル定義の一部・参考 |
 
 ### 各ファイル

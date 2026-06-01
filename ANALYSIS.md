@@ -25,7 +25,7 @@
 5. **`storage/analytics/learnings.md` に追記** → commit & push
 
 ```bash
-cd ~/atlier-base-v1/products/threads-workflow-repo
+cd ~/atlier-base-v1/projects/sns-auto-post/threads
 git add storage/analytics/learnings.md
 git commit -m "analysis: weekly learnings update (Threads)"
 git push

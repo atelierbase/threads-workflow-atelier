@@ -170,7 +170,7 @@
 
 調査結果は以下に蓄積（運用しながら更新）：
 
-- 一時的なリサーチノート: `~/atlier-base-v1/threads-workflow-repo/storage/research/YYYY-MM-DD-research.md`
+- 一時的なリサーチノート: `~/atlier-base-v1/projects/sns-auto-post/threads/storage/research/YYYY-MM-DD-research.md`
 - 抽出されたパターン: `templates/voice-guide.md` の「良い例」セクション
 - 競合アカウントメモ: `references/competitors.md`（必要に応じて新設）
 

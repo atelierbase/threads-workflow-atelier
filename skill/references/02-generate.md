@@ -4,7 +4,7 @@
 
 ## 入力
 
-- `~/atlier-base-v1/threads-workflow-repo/storage/stocks/drafts.md` の最新ネタリスト
+- `~/atlier-base-v1/projects/sns-auto-post/threads/storage/stocks/drafts.md` の最新ネタリスト
 - もしくはフェーズ①「ネタ仕入れ」の出力を直接
 
 ## 出力
@@ -299,7 +299,7 @@ Threads：「私もこう感じました」が中心
 
 ### Step 5. pending.md への書き込み
 
-`~/atlier-base-v1/threads-workflow-repo/storage/stocks/pending.md` に Write。
+`~/atlier-base-v1/projects/sns-auto-post/threads/storage/stocks/pending.md` に Write。
 
 各エントリのフォーマット：
 ```markdown
@@ -320,7 +320,7 @@ Threads：「私もこう感じました」が中心
 ### Step 6. git push
 
 ```bash
-cd ~/atlier-base-v1/threads-workflow-repo
+cd ~/atlier-base-v1/projects/sns-auto-post/threads
 git pull --no-rebase  # 念のため
 git add storage/stocks/pending.md
 git commit -m "stock: rewrite N posts with 6-category viral pattern"
