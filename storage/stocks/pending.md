@@ -5,6 +5,29 @@
 
 ---
 
+## 2026-06-03-005
+- 種類: 画像付き
+- 投稿想定時刻: 夜（15:00-23:00）
+- 想定日: 2026-06-03（水）
+- 軸: AI自動化メタ #2
+- ソース: 自分の実体験（AIに任せる範囲の線引き）
+- 画像プロンプト: A clean modern square infographic card (1:1) in Japanese for an empathy-driven AI/maker account. Title "AIに任せる / まだ任せない". Two columns: left "任せる" with items 「単純作業」「下調べ」「下書き」; right "まだ自分で" with items 「最終判断」「届け方の設計」「信頼に関わること」. Style: soft warm background, dark readable text, one teal accent, friendly rounded design, generous whitespace, minimal flat icons, no photographs, no human faces. Small handle bottom "@atelierbase_own".
+- 画像ファイル: storage/images/2026-06-03-005.png
+- 文面:
+
+1ヶ月、AIに任せる範囲を少しずつ広げてみて、わかったことを1枚にまとめました。
+
+任せていいもの、まだ自分でやるべきもの。
+その線引きが、最初の頃とはだいぶ変わりました。
+
+詳しくは画像に。
+
+皆さんは、AIに「ここから先は任せない」と決めている線、ありますか？💭
+
+- ステータス: pending
+
+---
+
 ## 2026-06-02-001
 - 種類: 単発
 - 投稿想定時刻: 朝（07:00-09:00）
@@ -99,29 +122,6 @@ AIのおかげで、サービスを前より何倍も速く作れるようにな
 任せ方って、0か100じゃないんですよね。
 
 皆さんは、AIにどこまで任せていますか？それとも、まだ怖いですか？💭
-
-- ステータス: pending
-
----
-
-## 2026-06-03-005
-- 種類: 画像付き
-- 投稿想定時刻: 昼（11:00-15:00）
-- 想定日: 2026-06-03（水）
-- 軸: AI自動化メタ #2
-- ソース: 自分の実体験（AIに任せる範囲の線引き）
-- 画像プロンプト: A clean modern square infographic card (1:1) in Japanese for an empathy-driven AI/maker account. Title "AIに任せる / まだ任せない". Two columns: left "任せる" with items 「単純作業」「下調べ」「下書き」; right "まだ自分で" with items 「最終判断」「届け方の設計」「信頼に関わること」. Style: soft warm background, dark readable text, one teal accent, friendly rounded design, generous whitespace, minimal flat icons, no photographs, no human faces. Small handle bottom "@atelierbase_own".
-- 画像ファイル: storage/images/2026-06-03-005.png
-- 文面:
-
-1ヶ月、AIに任せる範囲を少しずつ広げてみて、わかったことを1枚にまとめました。
-
-任せていいもの、まだ自分でやるべきもの。
-その線引きが、最初の頃とはだいぶ変わりました。
-
-詳しくは画像に。
-
-皆さんは、AIに「ここから先は任せない」と決めている線、ありますか？💭
 
 - ステータス: pending
 
