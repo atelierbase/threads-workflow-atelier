@@ -103,3 +103,10 @@ X... (217 chars)
 2026-06-01T00:06:53.980704+09:00 [threads] jitter=636s
 2026-06-01T00:17:29.980946+09:00 [threads] credentials: env vars
 2026-06-01T00:17:29.981384+09:00 [threads] No pending post for slot=夜
+2026-06-01T21:00:43.379305+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-06-01T21:00:43.379399+09:00 [threads] jitter=655s
+2026-06-01T21:11:38.379653+09:00 [threads] credentials: env vars
+2026-06-01T21:11:38.380395+09:00 [threads] Text preview: 1ヶ月、AIに任せる範囲を少しずつ広げてみて、わかったことを... (133 chars), comments=0, image=yes
+2026-06-01T21:11:42.315268+09:00 [threads] container_id=17891029158511951 (image=yes, reply=no)
+2026-06-01T21:11:49.971998+09:00 [threads] POSTED main thread_id=18096767777180269
+2026-06-01T21:11:49.972862+09:00 [threads] DONE moved 2026-06-03-005 to posted (type=画像付き)

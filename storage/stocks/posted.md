@@ -202,3 +202,25 @@ Threads では「失敗」「迷い」「私はこう思う」が刺さる。
 - ステータス: posted
 
 ---
+
+## 2026-06-03-005（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-01T21:11:49.972631+09:00
+- thread_id: 18096767777180269
+- URL: https://www.threads.com/@atelierbase_own/post/18096767777180269
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-03-005.png
+- 文面:
+
+1ヶ月、AIに任せる範囲を少しずつ広げてみて、わかったことを1枚にまとめました。
+
+任せていいもの、まだ自分でやるべきもの。
+その線引きが、最初の頃とはだいぶ変わりました。
+
+詳しくは画像に。
+
+皆さんは、AIに「ここから先は任せない」と決めている線、ありますか？💭
+
+- ステータス: posted
+
+---
