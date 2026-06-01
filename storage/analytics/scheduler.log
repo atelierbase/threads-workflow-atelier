@@ -11,3 +11,95 @@
 2026-05-27T08:28:23.300590+09:00 [threads] container_id=17890126218511951
 2026-05-27T08:28:29.308088+09:00 [threads] POSTED thread_id=18002899721926625
 2026-05-27T08:28:29.308941+09:00 [threads] DONE moved 2026-05-27-001 to posted
+2026-05-27T20:51:17.003973+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-27T20:51:17.004061+09:00 [threads] jitter=816s
+2026-05-27T21:04:53.004305+09:00 [threads] credentials: env vars
+2026-05-27T21:04:53.004943+09:00 [threads] Text preview: 正直に書きます。
+
+昨日の夜、CLAUDE.md の書き方で... (184 chars)
+2026-05-27T21:04:55.736598+09:00 [threads] container_id=17890221321511951
+2026-05-27T21:05:01.147969+09:00 [threads] POSTED thread_id=18103169108107473
+2026-05-27T21:05:01.148719+09:00 [threads] DONE moved 2026-05-27-003 to posted
+2026-05-27T23:45:13.563054+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-27T23:45:13.563150+09:00 [threads] jitter=846s
+2026-05-27T23:59:19.563449+09:00 [threads] credentials: env vars
+2026-05-27T23:59:19.564097+09:00 [threads] Text preview: LP を9回書き直して、9回ボツにしました。
+
+「響かない」... (221 chars)
+2026-05-27T23:59:21.944332+09:00 [threads] container_id=17890247256511951
+2026-05-27T23:59:27.809241+09:00 [threads] POSTED thread_id=18589152868033807
+2026-05-27T23:59:27.810122+09:00 [threads] DONE moved 2026-05-28-003 to posted
+2026-05-28T03:38:04.550340+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-28T03:38:04.550419+09:00 [threads] jitter=87s
+2026-05-28T03:39:31.550633+09:00 [threads] credentials: env vars
+2026-05-28T03:39:31.551118+09:00 [threads] Text preview: 1日で1万インプ出た投稿があったんですが、
+売上には1円もつ... (176 chars)
+2026-05-28T03:39:33.448706+09:00 [threads] container_id=17890278900511951
+2026-05-28T03:39:38.145937+09:00 [threads] POSTED thread_id=18118076416741649
+2026-05-28T03:39:38.146583+09:00 [threads] DONE moved 2026-05-29-003 to posted
+2026-05-28T20:55:21.016472+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-28T20:55:21.016564+09:00 [threads] jitter=867s
+2026-05-28T21:09:48.016798+09:00 [threads] credentials: env vars
+2026-05-28T21:09:48.017370+09:00 [threads] Text preview: X と Threads、同じテーマで投稿してみました。
+
+X... (185 chars)
+2026-05-28T21:09:50.553121+09:00 [threads] container_id=17890388052511951
+2026-05-28T21:09:56.238314+09:00 [threads] POSTED thread_id=17918770152164213
+2026-05-28T21:09:56.239137+09:00 [threads] DONE moved 2026-05-30-003 to posted
+2026-05-29T02:09:03.524078+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-29T02:09:03.524168+09:00 [threads] jitter=608s
+2026-05-29T02:19:11.524377+09:00 [threads] credentials: env vars
+2026-05-29T02:19:11.525018+09:00 [threads] Text preview: プロフィールに書いている「AI に働かせて自分は寝る」、
+半... (193 chars)
+2026-05-29T02:19:14.994038+09:00 [threads] container_id=17890431819511951
+2026-05-29T02:19:20.466758+09:00 [threads] POSTED thread_id=18050674988760192
+2026-05-29T02:19:20.467416+09:00 [threads] DONE moved 2026-05-31-003 to posted
+2026-05-29T04:46:28.607045+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-29T04:46:28.607133+09:00 [threads] jitter=483s
+2026-05-29T04:54:31.607373+09:00 [threads] credentials: env vars
+2026-05-29T04:54:31.607946+09:00 [threads] Text preview: SNS でフォロワーが増えても、
+売上に直結しないって、最近... (210 chars)
+2026-05-29T04:54:35.455803+09:00 [threads] container_id=17890449498511951
+2026-05-29T04:54:42.241038+09:00 [threads] POSTED thread_id=18101932565044222
+2026-05-29T04:54:42.241668+09:00 [threads] DONE moved 2026-06-01-003 to posted
+2026-05-29T19:58:42.623661+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-29T19:58:42.623750+09:00 [threads] jitter=92s
+2026-05-29T20:00:14.623997+09:00 [threads] credentials: env vars
+2026-05-29T20:00:14.624590+09:00 [threads] Text preview: X と Threads、両方運用してみて気づいたこと。
+
+X... (217 chars)
+2026-05-29T20:00:17.834648+09:00 [threads] container_id=17890540203511951
+2026-05-29T20:00:23.923490+09:00 [threads] POSTED thread_id=18104534527796822
+2026-05-29T20:00:23.924098+09:00 [threads] DONE moved 2026-06-02-003 to posted
+2026-05-29T23:17:37.142726+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-29T23:17:37.142806+09:00 [threads] jitter=376s
+2026-05-29T23:23:53.143042+09:00 [threads] credentials: env vars
+2026-05-29T23:23:53.143428+09:00 [threads] No pending post for slot=夜
+2026-05-30T04:41:23.010911+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-30T04:41:23.011008+09:00 [threads] jitter=537s
+2026-05-30T04:50:20.011271+09:00 [threads] credentials: env vars
+2026-05-30T04:50:20.011717+09:00 [threads] No pending post for slot=夜
+2026-05-30T17:04:02.024518+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-30T17:04:02.024606+09:00 [threads] jitter=301s
+2026-05-30T17:09:03.024843+09:00 [threads] credentials: env vars
+2026-05-30T17:09:03.025400+09:00 [threads] No pending post for slot=夜
+2026-05-30T19:24:34.033945+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-30T19:24:34.034017+09:00 [threads] jitter=379s
+2026-05-30T19:30:53.034222+09:00 [threads] credentials: env vars
+2026-05-30T19:30:53.034584+09:00 [threads] No pending post for slot=夜
+2026-05-30T23:54:32.302864+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-30T23:54:32.302958+09:00 [threads] jitter=271s
+2026-05-30T23:59:03.303208+09:00 [threads] credentials: env vars
+2026-05-30T23:59:03.303648+09:00 [threads] No pending post for slot=夜
+2026-05-31T17:30:20.642044+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-31T17:30:20.642180+09:00 [threads] jitter=586s
+2026-05-31T17:40:06.642416+09:00 [threads] credentials: env vars
+2026-05-31T17:40:06.642844+09:00 [threads] No pending post for slot=夜
+2026-05-31T19:34:30.800872+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-05-31T19:34:30.800951+09:00 [threads] jitter=404s
+2026-05-31T19:41:14.801173+09:00 [threads] credentials: env vars
+2026-05-31T19:41:14.801615+09:00 [threads] No pending post for slot=夜
+2026-06-01T00:06:53.980616+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-06-01T00:06:53.980704+09:00 [threads] jitter=636s
+2026-06-01T00:17:29.980946+09:00 [threads] credentials: env vars
+2026-06-01T00:17:29.981384+09:00 [threads] No pending post for slot=夜
