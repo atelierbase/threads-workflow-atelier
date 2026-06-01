@@ -126,3 +126,14 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-02T05:11:21.936061+09:00 [threads] container_id=17891089902511951 (image=no, reply=no)
 2026-06-02T05:11:28.082899+09:00 [threads] POSTED main thread_id=18106020382967934
 2026-06-02T05:11:28.083581+09:00 [threads] DONE moved 2026-06-03-006 to posted (type=単発)
+2026-06-02T07:16:53.878144+09:00 [threads] START slot=朝 dry_run=False skip_jitter=False
+2026-06-02T07:16:53.878234+09:00 [threads] jitter=496s
+2026-06-02T07:25:09.878474+09:00 [threads] credentials: env vars
+2026-06-02T07:25:09.879284+09:00 [threads] Text preview: 正直に書きます。
+
+少し前まで私は、AIに大きなタスクを丸ご... (156 chars), comments=1, image=no
+2026-06-02T07:25:13.075063+09:00 [threads] container_id=17891100252511951 (image=no, reply=no)
+2026-06-02T07:25:18.713637+09:00 [threads] POSTED main thread_id=18124195183636952
+2026-06-02T07:25:21.368689+09:00 [threads] container_id=17891100270511951 (image=no, reply=yes)
+2026-06-02T07:25:30.015263+09:00 [threads] POSTED comment 1 thread_id=18000722675762612
+2026-06-02T07:25:30.016101+09:00 [threads] DONE moved 2026-06-03-004 to posted (type=コメント仕込み)
