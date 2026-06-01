@@ -119,3 +119,10 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-02T04:23:38.430637+09:00 [threads] container_id=17891085606511951 (image=no, reply=no)
 2026-06-02T04:23:44.723178+09:00 [threads] POSTED main thread_id=18157155718415453
 2026-06-02T04:23:44.723854+09:00 [threads] DONE moved 2026-06-02-003 to posted (type=単発)
+2026-06-02T05:06:55.731820+09:00 [threads] START slot=夜 dry_run=False skip_jitter=False
+2026-06-02T05:06:55.731916+09:00 [threads] jitter=263s
+2026-06-02T05:11:18.732228+09:00 [threads] credentials: env vars
+2026-06-02T05:11:18.732955+09:00 [threads] Text preview: 同じ気づきを、X と Threads の両方に書いてみて思う... (185 chars), comments=0, image=no
+2026-06-02T05:11:21.936061+09:00 [threads] container_id=17891089902511951 (image=no, reply=no)
+2026-06-02T05:11:28.082899+09:00 [threads] POSTED main thread_id=18106020382967934
+2026-06-02T05:11:28.083581+09:00 [threads] DONE moved 2026-06-03-006 to posted (type=単発)
