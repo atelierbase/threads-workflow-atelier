@@ -148,3 +148,12 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-02T19:43:41.813603+09:00 [threads] DONE moved 2026-06-04-009 to posted (type=単発)
 2026-06-02T21:31:47.859278+09:00 [threads] START slot=朝 (source=POST_SLOT) dry_run=False skip_jitter=False
 2026-06-02T21:31:47.859455+09:00 [threads] SKIP slot=朝 は本日すでに投稿済み（冗長クロンの重複起動）
+2026-06-03T03:12:55.180710+09:00 [threads] START slot=昼 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-06-03T03:12:55.180876+09:00 [threads] jitter=222s
+2026-06-03T03:16:37.181108+09:00 [threads] credentials: env vars
+2026-06-03T03:16:37.182935+09:00 [threads] Text preview: 実は私、プラグインを盛りすぎる癖があります。
+
+「便利そう」... (257 chars), comments=0, image=no
+2026-06-03T03:16:40.824358+09:00 [threads] container_id=17891228151511951 (image=no, reply=no)
+2026-06-03T03:16:47.984717+09:00 [threads] POSTED main thread_id=18104565062085906
+2026-06-03T03:16:47.985629+09:00 [threads] DONE moved 2026-06-04-008 to posted (type=単発)
