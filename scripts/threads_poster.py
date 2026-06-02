@@ -150,8 +150,11 @@ def post_to_threads(
 
 
 def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
-    slot = current_slot()
-    log(f"START slot={slot} dry_run={dry_run} skip_jitter={skip_jitter}")
+    # POST_SLOT（起動cronから決まる固定スロット）があれば優先。
+    # 無い時（手動dispatch等）のみ実行時刻から判定する。
+    # → GitHub Actions の発火時刻ズレで「夜投稿が朝に出る」のを防ぐ。
+    slot = os.getenv("POST_SLOT") or current_slot()
+    log(f"START slot={slot} (source={'POST_SLOT' if os.getenv('POST_SLOT') else 'clock'}) dry_run={dry_run} skip_jitter={skip_jitter}")
 
     # ジッター
     if not dry_run and not skip_jitter and not os.getenv("SKIP_JITTER"):
