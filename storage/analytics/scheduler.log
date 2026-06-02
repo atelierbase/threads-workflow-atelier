@@ -137,3 +137,12 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-02T07:25:21.368689+09:00 [threads] container_id=17891100270511951 (image=no, reply=yes)
 2026-06-02T07:25:30.015263+09:00 [threads] POSTED comment 1 thread_id=18000722675762612
 2026-06-02T07:25:30.016101+09:00 [threads] DONE moved 2026-06-03-004 to posted (type=コメント仕込み)
+2026-06-02T19:34:53.736037+09:00 [threads] START slot=夜 (source=clock) dry_run=False skip_jitter=False
+2026-06-02T19:34:53.736112+09:00 [threads] jitter=520s
+2026-06-02T19:43:33.736302+09:00 [threads] credentials: env vars
+2026-06-02T19:43:33.736969+09:00 [threads] Text preview: 夜に、ふと考えたことを。
+
+昨日どうしても解けなかったバグを... (253 chars), comments=0, image=no
+2026-06-02T19:43:36.258473+09:00 [threads] container_id=17891171811511951 (image=no, reply=no)
+2026-06-02T19:43:41.812852+09:00 [threads] POSTED main thread_id=17952389202145390
+2026-06-02T19:43:41.813603+09:00 [threads] DONE moved 2026-06-04-009 to posted (type=単発)
