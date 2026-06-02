@@ -146,3 +146,5 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-02T19:43:36.258473+09:00 [threads] container_id=17891171811511951 (image=no, reply=no)
 2026-06-02T19:43:41.812852+09:00 [threads] POSTED main thread_id=17952389202145390
 2026-06-02T19:43:41.813603+09:00 [threads] DONE moved 2026-06-04-009 to posted (type=単発)
+2026-06-02T21:31:47.859278+09:00 [threads] START slot=朝 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-06-02T21:31:47.859455+09:00 [threads] SKIP slot=朝 は本日すでに投稿済み（冗長クロンの重複起動）
