@@ -46,6 +46,8 @@ POSTED = REPO_DIR / "storage" / "stocks" / "posted.md"
 CREDS = Path.home() / ".config" / "threads-workflow" / "threads-credentials.json"
 LOG_DIR = REPO_DIR / "storage" / "analytics"
 LOG = LOG_DIR / "scheduler.log"
+# 日×枠ごとの投稿済みマーカー（冗長クロンの二重投稿を防ぐ冪等ガード用）
+STATE = LOG_DIR / "post-state.json"
 
 JST = timezone(timedelta(hours=9))
 THREADS_TEXT_LIMIT = 500
@@ -60,6 +62,53 @@ def log(msg: str) -> None:
     with open(LOG, "a", encoding="utf-8") as f:
         f.write(line + "\n")
     print(line)
+
+
+def _today() -> str:
+    return datetime.now(JST).strftime("%Y-%m-%d")
+
+
+def load_state() -> dict:
+    try:
+        return json.loads(STATE.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def already_posted(slot: str) -> bool:
+    """この日×この枠が既に投稿済みなら True（冗長クロンの二重投稿を防ぐ）。"""
+    return slot in load_state().get(_today(), [])
+
+
+def mark_posted(slot: str) -> None:
+    """この日×この枠を投稿済みとして記録。直近14日分のみ保持。"""
+    st = load_state()
+    st.setdefault(_today(), [])
+    if slot not in st[_today()]:
+        st[_today()].append(slot)
+    for k in sorted(st.keys())[:-14]:
+        del st[k]
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+    STATE.write_text(json.dumps(st, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def is_transient(e: Exception) -> bool:
+    """一過性（リトライする価値あり）のエラーか。429/5xx を含む。"""
+    status = getattr(getattr(e, "response", None), "status_code", None)
+    return status in (429, 500, 502, 503, 504)
+
+
+def post_main_with_retry(make_call, attempts: int = 3):
+    """メイン投稿を一過性エラーに対して指数バックオフでリトライする。"""
+    for i in range(1, attempts + 1):
+        try:
+            return make_call()
+        except Exception as e:
+            log(f"main post attempt {i}/{attempts} failed: {e}")
+            if i < attempts and is_transient(e):
+                time.sleep(min(60, 10 * i))
+                continue
+            raise
 
 
 def load_credentials() -> dict:
@@ -156,6 +205,12 @@ def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
     slot = os.getenv("POST_SLOT") or current_slot()
     log(f"START slot={slot} (source={'POST_SLOT' if os.getenv('POST_SLOT') else 'clock'}) dry_run={dry_run} skip_jitter={skip_jitter}")
 
+    # 冪等ガード: 同じ日×同じ枠が既に投稿済みなら何もしない。
+    # → 冗長クロン（各枠を複数回発火させてドロップ対策）でも二重投稿しない。
+    if not dry_run and already_posted(slot):
+        log(f"SKIP slot={slot} は本日すでに投稿済み（冗長クロンの重複起動）")
+        sys.exit(0)
+
     # ジッター
     if not dry_run and not skip_jitter and not os.getenv("SKIP_JITTER"):
         jitter = random.randint(0, 15 * 60)
@@ -226,34 +281,46 @@ def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
         print("---")
         return
 
-    # 投稿
-    try:
+    # メイン投稿（一過性エラーはリトライ。画像失敗時は本文のみでフォールバック）
+    def _post_main():
         try:
-            thread_id = post_to_threads(
+            return post_to_threads(
                 main_text, creds["access_token"], creds["user_id"], image_url=image_url
             )
         except Exception as e_img:
             if image_url:
                 log(f"image post failed, retry text-only: {e_img}")
-                thread_id = post_to_threads(
+                return post_to_threads(
                     main_text, creds["access_token"], creds["user_id"], image_url=None
                 )
-            else:
-                raise
-        log(f"POSTED main thread_id={thread_id}")
+            raise
 
-        reply_to = thread_id
-        comment_ids = []
-        for i, comment in enumerate(comments, 1):
+    try:
+        thread_id = post_main_with_retry(_post_main)
+        log(f"POSTED main thread_id={thread_id}")
+    except Exception as e:
+        # メイン投稿が出ていない＝この枠は未消費。次の冗長クロンが再試行する。
+        log(f"POST FAILED (main): {e}")
+        sys.exit(1)
+
+    # ここから先はメイン投稿成功済み。コメントが失敗しても枠は消費して確定させる
+    # （でないと次の冗長クロンがメインを二重投稿してしまう）。
+    reply_to = thread_id
+    comment_ids = []
+    for i, comment in enumerate(comments, 1):
+        try:
             cid = post_to_threads(
                 comment, creds["access_token"], creds["user_id"], reply_to_id=reply_to
             )
             comment_ids.append(cid)
             reply_to = cid
             log(f"POSTED comment {i} thread_id={cid}")
-    except Exception as e:
-        log(f"POST FAILED: {e}")
-        sys.exit(1)
+        except Exception as e:
+            log(f"COMMENT {i} FAILED (本文は投稿済み・続行): {e}")
+            break
+
+    # この日×この枠を投稿済みとして記録（冪等ガード用）
+    mark_posted(slot)
 
     # posted.md に追記
     id_match = re.search(r"## (\d{4}-\d{2}-\d{2}-\d{3})", target_post)
