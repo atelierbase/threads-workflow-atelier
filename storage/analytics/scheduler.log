@@ -168,3 +168,5 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-03T05:41:44.222547+09:00 [threads] DONE moved 2026-06-05-011 to posted (type=コメント仕込み)
 2026-06-03T07:05:21.018155+09:00 [threads] START slot=夜 (source=POST_SLOT) dry_run=False skip_jitter=False
 2026-06-03T07:05:21.018316+09:00 [threads] SKIP slot=夜 は本日すでに投稿済み（冗長クロンの重複起動）
+2026-06-03T22:26:36.958383+09:00 [threads] START slot=夜 (source=clock) dry_run=False skip_jitter=False
+2026-06-03T22:26:36.958525+09:00 [threads] SKIP slot=夜 は本日すでに投稿済み（冗長クロンの重複起動）
