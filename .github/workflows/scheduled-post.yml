@@ -1,27 +1,22 @@
 name: Scheduled Threads Post
 
+# === 送信専用ワークフロー（GitHub cron は廃止）===
+# 配信の「時計」はクラウドRoutineが持つ。Routine が定時に投稿文を生成して
+# pending.md を push した瞬間に、このワークフローが起動して Threads へ送信する。
+#
+# なぜ cron を捨てたか:
+#   GitHub Actions の schedule cron は発火が数時間ズレ・ドロップし、
+#   投稿が深夜に固まる/日中が空になる事故を起こしたため（2026-06-03 に確認）。
+#   「いつ投稿するか」は正確な時計を持つRoutineがpushタイミングでConfigし、
+#   GitHub Actions は「Secretsを使って確実に送る」エンジンに徹する。
 on:
-  schedule:
-    # GitHub Actions の schedule はベストエフォートで遅延・ドロップする。
-    # 各枠を「主＋予備2回」の計3回発火させ、1発落ちても後続が拾う冗長構成にする。
-    # スクリプト側の冪等ガード（日×枠で1回だけ投稿）が二重投稿を防ぐ。
-    # X とは時間差をつけて自然な投稿リズムに。発火間隔は 35〜40分。
-    # --- 朝 JST 07:20/07:55/08:35 = UTC 22:20/22:55/23:35（前日扱い）---
-    - cron: '20 22 * * *'
-    - cron: '55 22 * * *'
-    - cron: '35 23 * * *'
-    # --- 昼 JST 12:20/12:55/13:35 = UTC 03:20/03:55/04:35 ---
-    - cron: '20 3 * * *'
-    - cron: '55 3 * * *'
-    - cron: '35 4 * * *'
-    # --- 夜 JST 19:20/19:55/20:35 = UTC 10:20/10:55/11:35 ---
-    - cron: '20 10 * * *'
-    - cron: '55 10 * * *'
-    - cron: '35 11 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'storage/stocks/pending.md'   # Routine が1本積んだ時だけ起動
+  workflow_dispatch:                  # 手動送信（緊急の取りこぼし救済など）
 
-  workflow_dispatch:
-
-# 同一ワークフローの多重起動を直列化（冗長クロンが重なっても二重投稿しない保険）
+# 多重起動を直列化（保険）
 concurrency:
   group: scheduled-threads-post
   cancel-in-progress: false
@@ -29,6 +24,9 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
+    # 無限ループ防止: poster 自身の「投稿済みに移動」コミット([skip-send]入り)では起動しない。
+    # workflow_dispatch には head_commit が無いので常に通す。
+    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip-send]') }}
     permissions:
       contents: write
 
@@ -48,24 +46,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run threads poster
+      - name: Send the queued post
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           TZ: Asia/Tokyo
-          # 起動した cron からスロットを固定する（GitHub の発火時刻ズレ対策）。
-          # 各枠3本の cron すべてを同じスロットへマップ。手動dispatchは空→時計判定にフォールバック。
-          POST_SLOT: ${{ (github.event.schedule == '20 22 * * *' || github.event.schedule == '55 22 * * *' || github.event.schedule == '35 23 * * *') && '朝' || (github.event.schedule == '20 3 * * *' || github.event.schedule == '55 3 * * *' || github.event.schedule == '35 4 * * *') && '昼' || (github.event.schedule == '20 10 * * *' || github.event.schedule == '55 10 * * *' || github.event.schedule == '35 11 * * *') && '夜' || '' }}
+          # 時計はRoutineが正確に持つので、poster は実行時刻=正しいスロットで判定してよい
+          # （旧 POST_SLOT ハックは不要）。直投稿なのでジッターも切る。
+          SKIP_JITTER: "1"
         run: python scripts/threads_poster.py
 
-      - name: Commit and push changes
+      - name: Commit and push result
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add storage/stocks/pending.md storage/stocks/posted.md storage/analytics/scheduler.log storage/analytics/post-state.json
           if ! git diff --cached --quiet; then
-            git commit -m "auto: post threads at $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+            # [skip-send] を付けて、この結果コミットの push で自分自身を再起動しないようにする。
+            git commit -m "auto: sent Threads post at $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST') [skip-send]"
             git push
           else
-            echo "No changes to commit (post might have been skipped for this slot)."
+            echo "No changes to commit (nothing was queued to send)."
           fi
