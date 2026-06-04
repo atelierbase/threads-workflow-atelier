@@ -39,7 +39,9 @@ import requests
 if os.getenv("GITHUB_ACTIONS"):
     REPO_DIR = Path(__file__).resolve().parent.parent
 else:
-    REPO_DIR = Path.home() / "atlier-base-v1" / "projects" / "sns-auto-post" / "threads"
+    # ローカル優先。無ければスクリプト相対の repo ルート（Codexクラウド等・どこから clone しても動く）。
+    _repo = Path.home() / "atlier-base-v1" / "projects" / "sns-auto-post" / "threads"
+    REPO_DIR = _repo if _repo.exists() else Path(__file__).resolve().parent.parent
 
 PENDING = REPO_DIR / "storage" / "stocks" / "pending.md"
 POSTED = REPO_DIR / "storage" / "stocks" / "posted.md"
