@@ -173,3 +173,6 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-04T10:48:32.239376+09:00 [threads] START slot=朝 (source=clock) dry_run=False skip_jitter=False
 2026-06-04T10:48:32.239534+09:00 [threads] credentials: env vars
 2026-06-04T10:48:32.239712+09:00 [threads] No pending posts.
+2026-06-04T10:49:29.192959+09:00 [threads] START slot=朝 (source=clock) dry_run=False skip_jitter=False
+2026-06-04T10:49:29.193114+09:00 [threads] credentials: env vars
+2026-06-04T10:49:29.193293+09:00 [threads] No pending posts.
