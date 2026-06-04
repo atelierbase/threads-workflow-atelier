@@ -28,6 +28,7 @@ import json
 import os
 import random
 import re
+import shlex
 import sys
 import time
 from datetime import datetime, timezone, timedelta
@@ -44,6 +45,7 @@ REPO_DIR = Path(__file__).resolve().parent.parent
 PENDING = REPO_DIR / "storage" / "stocks" / "pending.md"
 POSTED = REPO_DIR / "storage" / "stocks" / "posted.md"
 CREDS = Path.home() / ".config" / "threads-workflow" / "threads-credentials.json"
+ENV_FILE = Path.home() / ".config" / "sns-auto-post" / "env"
 LOG_DIR = REPO_DIR / "storage" / "analytics"
 LOG = LOG_DIR / "scheduler.log"
 # 日×枠ごとの投稿済みマーカー（冗長クロンの二重投稿を防ぐ冪等ガード用）
@@ -109,6 +111,28 @@ def post_main_with_retry(make_call, attempts: int = 3):
                 time.sleep(min(60, 10 * i))
                 continue
             raise
+
+
+def load_env_file() -> None:
+    """ローカルAutomation用の非公開envファイルを読む。既存の環境変数は上書きしない。"""
+    if not ENV_FILE.exists():
+        return
+    for raw_line in ENV_FILE.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        try:
+            parts = shlex.split(line, comments=True, posix=True)
+        except ValueError:
+            continue
+        if parts and parts[0] == "export":
+            parts = parts[1:]
+        for part in parts:
+            if "=" not in part:
+                continue
+            key, value = part.split("=", 1)
+            if re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", key):
+                os.environ.setdefault(key, value)
 
 
 def load_credentials() -> dict:
@@ -218,6 +242,8 @@ def post_to_threads(
 
 
 def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
+    load_env_file()
+
     # POST_SLOT（起動cronから決まる固定スロット）があれば優先。
     # 無い時（手動dispatch等）のみ実行時刻から判定する。
     # → GitHub Actions の発火時刻ズレで「夜投稿が朝に出る」のを防ぐ。
