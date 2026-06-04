@@ -2,3 +2,4 @@
 2026-06-02 14:00 JST | generated 4 | pending 5→9
 2026-06-03 09:10 JST | generated 3 | pending 6→9
 2026-06-04 16:34 JST | skip: 2026-06-04-703 image generated locally but git push failed (Could not resolve host: github.com); raw image URL not verified, poster not run
+2026-06-04 20:49 JST | skip: 2026-06-04-703 image generated and saved, but git push failed (Could not resolve host: github.com); raw image URL not verified, poster not run
