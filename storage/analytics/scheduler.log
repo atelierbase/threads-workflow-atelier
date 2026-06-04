@@ -189,3 +189,12 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-04T15:33:33.847543+09:00 [threads] container_id=17891454555511951 (image=yes, reply=no)
 2026-06-04T15:33:41.974259+09:00 [threads] POSTED main thread_id=18100430030124468
 2026-06-04T15:33:41.977061+09:00 [threads] DONE moved 2026-06-04-901 to posted (type=画像付き)
+2026-06-04T22:32:16.017465+09:00 [threads] START slot=夜 (source=POST_SLOT) dry_run=True skip_jitter=True
+2026-06-04T22:32:16.017815+09:00 [threads] credentials: env vars
+2026-06-04T22:32:16.018113+09:00 [threads] No pending posts.
+2026-06-04T22:41:53.574284+09:00 [threads] START slot=夜 (source=POST_SLOT) dry_run=False skip_jitter=True
+2026-06-04T22:41:53.575507+09:00 [threads] credentials: env vars
+2026-06-04T22:41:53.575766+09:00 [threads] Text preview: Claude Codeのhooks周りの更新を見ていて、地味... (196 chars), comments=0, image=yes
+2026-06-04T22:41:59.434983+09:00 [threads] container_id=17891496420511951 (image=yes, reply=no)
+2026-06-04T22:42:08.600590+09:00 [threads] POSTED main thread_id=18093840224219880
+2026-06-04T22:42:08.603435+09:00 [threads] DONE moved 2026-06-04-904 to posted (type=画像付き)

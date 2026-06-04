@@ -390,3 +390,22 @@ Claude Codeの6/3更新で、hooksからデスクトップ通知やウィンド�
 - ステータス: posted
 
 ---
+
+## 2026-06-04-904（Threads自動配信 / ローカル）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-04T22:42:08.602848+09:00
+- thread_id: 18093840224219880
+- URL: https://www.threads.com/@atelierbase_own/post/18093840224219880
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-04-904.png
+- 文面:
+
+Claude Codeのhooks周りの更新を見ていて、地味だけど大事だなと思いました。
+
+AIに作業を任せるとき、本当に怖いのは「遅いこと」よりも「止まったことに気づけないこと」だったりします。通知や失敗検知があるだけで、画面を見張り続けなくてよくなる。
+
+任せる体験って、速さだけじゃなく安心感まで含めて設計なんですよね。皆さんはAI作業の通知、多めが安心派ですか？少なめが集中派ですか？
+
+- ステータス: posted
+
+---
