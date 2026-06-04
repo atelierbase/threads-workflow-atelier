@@ -9,3 +9,5 @@ GitHub Actions（送信専用）が Threads へ投稿して posted.md に移す�
 - フォーマットは `.claude/skills/threads-post-now/SKILL.md` / `skill/agents/writer.md` 準拠。
 
 ---
+
+<!-- wiring-test 2026-06-04 10:48 JST : 配線確認用。posterは ## エントリが無いので何も投稿しない -->
