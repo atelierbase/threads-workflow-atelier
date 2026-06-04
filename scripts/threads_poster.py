@@ -8,7 +8,8 @@ posted.md に移動する。GitHub Actions / ローカル両対応。
 対応する投稿タイプ:
   - 単発: テキスト1本
   - コメント仕込み: メイン投稿 → reply_to_id でコメントを連投
-  - 画像付き: 画像を公開URL(raw.githubusercontent)で添付（未配置なら本文のみ）
+  - 画像付き: 画像を公開URL(raw.githubusercontent)で添付
+    - REQUIRE_IMAGE=1 の場合、画像を添付できなければ投稿せず失敗する
 
 認証情報の取得順:
   1. 環境変数（THREADS_ACCESS_TOKEN / THREADS_USER_ID）→ GitHub Actions 用
@@ -35,13 +36,10 @@ from pathlib import Path
 import requests
 
 
-# === パス定義（環境によって自動切替）===
-if os.getenv("GITHUB_ACTIONS"):
-    REPO_DIR = Path(__file__).resolve().parent.parent
-else:
-    # ローカル優先。無ければスクリプト相対の repo ルート（Codexクラウド等・どこから clone しても動く）。
-    _repo = Path.home() / "atlier-base-v1" / "projects" / "sns-auto-post" / "threads"
-    REPO_DIR = _repo if _repo.exists() else Path(__file__).resolve().parent.parent
+# === パス定義 ===
+# GitHub Actions / ローカル / Codex worktree のどこで実行しても、このスクリプトが
+# 置かれているリポジトリを正とする。
+REPO_DIR = Path(__file__).resolve().parent.parent
 
 PENDING = REPO_DIR / "storage" / "stocks" / "pending.md"
 POSTED = REPO_DIR / "storage" / "stocks" / "posted.md"
@@ -151,8 +149,27 @@ def resolve_image_url(target_post: str):
     rel = m.group(1).strip()
     if (REPO_DIR / rel).exists():
         return RAW_BASE + rel
-    log(f"画像ファイル指定あり ({rel}) だが未配置 → 本文のみでフォールバック")
+    log(f"画像ファイル指定あり ({rel}) だが未配置")
     return None
+
+
+def verify_image_url(image_url: str) -> bool:
+    """Threads が取得できる公開画像URLかを事前確認する。"""
+    try:
+        resp = requests.head(image_url, timeout=15, allow_redirects=True)
+        if resp.status_code == 405:
+            resp = requests.get(image_url, timeout=15, stream=True)
+        content_type = resp.headers.get("content-type", "").lower()
+        if resp.ok and (not content_type or content_type.startswith("image/")):
+            return True
+        log(
+            f"image URL is not ready: status={resp.status_code} "
+            f"content-type={content_type or 'unknown'} url={image_url}"
+        )
+        return False
+    except Exception as e:
+        log(f"image URL check failed: {e}")
+        return False
 
 
 def post_to_threads(
@@ -262,9 +279,13 @@ def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
         log("Failed to parse text from post")
         sys.exit(1)
 
+    type_match = re.search(r"-\s*種類:\s*(\S+)", target_post)
+    post_type = type_match.group(1) if type_match else "単発"
+
     raw_text = match.group(1).strip()
     main_text, comments = parse_main_and_comments(raw_text)
     image_url = resolve_image_url(target_post)
+    require_image = os.getenv("REQUIRE_IMAGE") == "1" or post_type == "画像付き"
     log(
         f"Text preview: {main_text[:30]}... ({len(main_text)} chars), "
         f"comments={len(comments)}, image={'yes' if image_url else 'no'}"
@@ -272,6 +293,14 @@ def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
 
     if len(main_text) > THREADS_TEXT_LIMIT:
         log(f"WARNING: text exceeds 500 char limit ({len(main_text)} chars)")
+
+    if require_image:
+        if not image_url:
+            log("REQUIRE_IMAGE=1 but no usable image file was found; aborting before post")
+            sys.exit(1)
+        if not verify_image_url(image_url):
+            log("REQUIRE_IMAGE=1 but the image URL is not publicly available; aborting before post")
+            sys.exit(1)
 
     if dry_run:
         log("DRY RUN - skipping actual post")
@@ -283,7 +312,8 @@ def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
         print("---")
         return
 
-    # メイン投稿（一過性エラーはリトライ。画像失敗時は本文のみでフォールバック）
+    # メイン投稿（一過性エラーはリトライ。通常は画像失敗時に本文のみへフォールバック）。
+    # REQUIRE_IMAGE=1 の場合は本文のみ投稿へフォールバックしない。
     def _post_main():
         try:
             return post_to_threads(
@@ -291,6 +321,9 @@ def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
             )
         except Exception as e_img:
             if image_url:
+                if require_image:
+                    log(f"image post failed and REQUIRE_IMAGE=1; aborting: {e_img}")
+                    raise
                 log(f"image post failed, retry text-only: {e_img}")
                 return post_to_threads(
                     main_text, creds["access_token"], creds["user_id"], image_url=None
@@ -327,9 +360,6 @@ def main(dry_run: bool = False, skip_jitter: bool = False) -> None:
     # posted.md に追記
     id_match = re.search(r"## (\d{4}-\d{2}-\d{2}-\d{3})", target_post)
     post_id = id_match.group(1) if id_match else "unknown"
-    type_match = re.search(r"-\s*種類:\s*(\S+)", target_post)
-    post_type = type_match.group(1) if type_match else "単発"
-
     runner = "GitHub Actions" if os.getenv("GITHUB_ACTIONS") else "ローカル"
     extra = ""
     if comment_ids:
