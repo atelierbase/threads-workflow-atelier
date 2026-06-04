@@ -170,3 +170,6 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-03T07:05:21.018316+09:00 [threads] SKIP slot=夜 は本日すでに投稿済み（冗長クロンの重複起動）
 2026-06-03T22:26:36.958383+09:00 [threads] START slot=夜 (source=clock) dry_run=False skip_jitter=False
 2026-06-03T22:26:36.958525+09:00 [threads] SKIP slot=夜 は本日すでに投稿済み（冗長クロンの重複起動）
+2026-06-04T10:48:32.239376+09:00 [threads] START slot=朝 (source=clock) dry_run=False skip_jitter=False
+2026-06-04T10:48:32.239534+09:00 [threads] credentials: env vars
+2026-06-04T10:48:32.239712+09:00 [threads] No pending posts.
