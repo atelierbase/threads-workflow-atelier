@@ -176,3 +176,16 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-04T10:49:29.192959+09:00 [threads] START slot=朝 (source=clock) dry_run=False skip_jitter=False
 2026-06-04T10:49:29.193114+09:00 [threads] credentials: env vars
 2026-06-04T10:49:29.193293+09:00 [threads] No pending posts.
+2026-06-04T15:32:48.544778+09:00 [threads] START slot=テスト (source=POST_SLOT) dry_run=False skip_jitter=True
+2026-06-04T15:32:48.545889+09:00 [threads] credentials: env vars
+2026-06-04T15:32:48.546157+09:00 [threads] Text preview: Claude Codeの6/3更新で、hooksからデスクト... (233 chars), comments=0, image=yes
+2026-06-04T15:32:49.323334+09:00 [threads] Container creation failed: 400 {"error":{"message":"Unsupported post request. Object with ID 'atelierbase_own' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"THApiException","code":100,"error_subcode":33,"fbtrace_id":"AhCIy7cTd9ujyc0_EGeCA2h"}}
+2026-06-04T15:32:49.323473+09:00 [threads] image post failed and REQUIRE_IMAGE=1; aborting: 400 Client Error: Bad Request for url: https://graph.threads.net/v1.0/atelierbase_own/threads
+2026-06-04T15:32:49.323675+09:00 [threads] main post attempt 1/3 failed: 400 Client Error: Bad Request for url: https://graph.threads.net/v1.0/atelierbase_own/threads
+2026-06-04T15:32:49.323712+09:00 [threads] POST FAILED (main): 400 Client Error: Bad Request for url: https://graph.threads.net/v1.0/atelierbase_own/threads
+2026-06-04T15:33:29.939331+09:00 [threads] START slot=テスト (source=POST_SLOT) dry_run=False skip_jitter=True
+2026-06-04T15:33:29.939751+09:00 [threads] credentials: env vars
+2026-06-04T15:33:29.940088+09:00 [threads] Text preview: Claude Codeの6/3更新で、hooksからデスクト... (233 chars), comments=0, image=yes
+2026-06-04T15:33:33.847543+09:00 [threads] container_id=17891454555511951 (image=yes, reply=no)
+2026-06-04T15:33:41.974259+09:00 [threads] POSTED main thread_id=18100430030124468
+2026-06-04T15:33:41.977061+09:00 [threads] DONE moved 2026-06-04-901 to posted (type=画像付き)
