@@ -177,23 +177,34 @@ def resolve_image_url(target_post: str):
     return None
 
 
-def verify_image_url(image_url: str) -> bool:
-    """Threads が取得できる公開画像URLかを事前確認する。"""
-    try:
-        resp = requests.head(image_url, timeout=15, allow_redirects=True)
-        if resp.status_code == 405:
-            resp = requests.get(image_url, timeout=15, stream=True)
-        content_type = resp.headers.get("content-type", "").lower()
-        if resp.ok and (not content_type or content_type.startswith("image/")):
-            return True
-        log(
-            f"image URL is not ready: status={resp.status_code} "
-            f"content-type={content_type or 'unknown'} url={image_url}"
-        )
-        return False
-    except Exception as e:
-        log(f"image URL check failed: {e}")
-        return False
+def verify_image_url(image_url: str, attempts: int = 18, delay_seconds: int = 5) -> bool:
+    """Threads が取得できる公開画像URLになるまで待つ。
+
+    GitHub Actions で pending.md と画像を同じ push に含めた場合、checkout には
+    画像があっても raw.githubusercontent.com 側の公開反映が数十秒遅れることがある。
+    Threads API は公開URLを取りに行くため、ここで待たないと画像付き投稿だけ失敗する。
+    """
+    last = "not checked"
+    for attempt in range(1, attempts + 1):
+        try:
+            resp = requests.head(image_url, timeout=15, allow_redirects=True)
+            if resp.status_code == 405:
+                resp = requests.get(image_url, timeout=15, stream=True)
+            content_type = resp.headers.get("content-type", "").lower()
+            last = f"status={resp.status_code} content-type={content_type or 'unknown'}"
+            if resp.ok and (not content_type or content_type.startswith("image/")):
+                if attempt > 1:
+                    log(f"image URL ready after {attempt} attempts: {image_url}")
+                return True
+        except Exception as e:
+            last = repr(e)
+
+        if attempt < attempts:
+            log(f"image URL not ready ({attempt}/{attempts}): {last}")
+            time.sleep(delay_seconds)
+
+    log(f"image URL is not ready after {attempts} attempts: {last} url={image_url}")
+    return False
 
 
 def post_to_threads(
