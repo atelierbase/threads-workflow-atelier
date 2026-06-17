@@ -1,140 +1,141 @@
-# AGENTS.md — Threads 直投稿ルーチン（Codex クラウド用・@atelierbase_own）
+# AGENTS.md - Threads image2 queue automation (@atelierbase_own)
 
-> **このファイルは Codex への指示書**（Codexクラウドルーチンが repo を clone するとこれを読む）。
-> 役割：**発火時に「今のスロット用の投稿を1本」生成し、必ず image2 / GPT-Image で画像を作り、画像付きで Threads に投稿してリポジトリを更新する**。
-> アカウント：**ひろ｜AI実業家**（Threads=@atelierbase_own / 屋号 Atelier Base）。Threads は**共感のプラットフォーム**。
+このrepoでのCodex Automationの役割は、**投稿を生成してimage2画像を作り、GitHub Actionsが投稿できる状態でcommit & pushすること**。
+Codex Automation自身はThreadsへ投稿しない。配信は `.github/workflows/scheduled-post.yml` が定刻に行う。
 
-このルーチンは**生成も送信もすべて Codex が行う**（Claude ルーチンは無効化済み）。Codex は image2 / GPT-Image で画像も作れるので、**毎回の画像付き投稿をこのルーチンだけで完結**させる。
+アカウント: **ひろ｜AI実業家**（Threads=@atelierbase_own / 屋号 Atelier Base）
+Threadsは共感・気づき・問いかけを重視する。
 
-> **2026-06-04 現在の運用方針**：毎日 **7:10 / 12:10 / 19:10 JST** の3スロットで1本ずつ投稿する。各発火は「現在スロットの1本」だけを扱い、**本文のみ投稿は禁止**。
+## 実行タイミング
 
----
+推奨Automation発火:
 
-## 0. 必要な認証（Codexクラウドの環境変数に設定。リポジトリには絶対に置かない）
+| 投稿枠 | Codex Automation目安 | GitHub Actions投稿 |
+|---|---:|---:|
+| 朝 | 06:45 JST | 07:20 JST |
+| 昼 | 11:45 JST | 12:20 JST |
+| 夜 | 18:45 JST | 19:20 JST |
 
-| 環境変数 | 用途 |
-|---|---|
-| `THREADS_ACCESS_TOKEN` | Threads Graph API アクセストークン |
-| `THREADS_USER_ID` | Threads ユーザーID |
-| `OPENAI_API_KEY` | image2 / GPT-Image 画像生成（毎回必須） |
+JST現在時刻からスロットを決める:
 
-> **キーをコミットしない**（public repo）。Codexの環境変数で渡す。
-> ローカル運用時の保管先は `~/.config/threads-workflow/threads-credentials.json`（クラウドでは環境変数を使う）。
+- 06:00-10:59 = 朝
+- 11:00-14:59 = 昼
+- それ以外 = 夜
 
-依存：`pip install requests openai`（poster は requests、画像生成は openai を使う）。未導入ならルーチン内でインストールしてよい。
+## 絶対ルール
 
----
+- 画像生成は **Codexのimage2のみ**。OpenAI Images API、Canva、HTML/CSS、SVG、ダミー画像は使わない。
+- Codex Automationは **Threadsへ直接投稿しない**。`scripts/threads_poster.py` も実行しない。
+- やることは `storage/images/<ID>.png` と `storage/stocks/pending.md` を作ってcommit & pushするところまで。
+- 画像生成・保存・検査に失敗したら `pending.md` に積まない。
+- 本文のみ投稿は禁止。`pending.md` に積む投稿は必ず `種類: 画像付き`。
+- 本文は必ず問いかけで締める。
+- 本名「石井」「ミライ塾」「アトリエの店主」は出さない。
+- Threads用画像をx repoへ置かない。
 
-## 1. 今のスロットを決める
-JST 現在時刻から：**6:00–10:59=朝 / 11:00–14:59=昼 / それ以外=夜**。
-`TZ=Asia/Tokyo date +%H` で時を取り `SLOT`（朝/昼/夜）を決める。
+## 1. 文脈を読む
 
-## 2. 投稿文を生成（1本だけ・このスロット用・必ず画像付き）
-書く前に必ず読む（このリポジトリ内）：
-- `skill/references/00-context.md` / `skill/templates/voice-guide.md` / `skill/references/02-generate.md`
-- `storage/analytics/learnings.md`（効くルールを反映）
-- 型は `skill/agents/writer.md`
+必ず読む:
 
-ネタは **WebSearch等で直近1週間の海外 Claude Code / Codex 情報**を、**Threads特性（共感・気づき・失敗成功に接続）で選ぶ**。
-**Threads鉄則：必ず問いかけで締める**／「私の体験」主役＋最新情報セット／一人称「私」／絵文字1個・多様化／**200-400字（最大500字）**／同カテゴリ連続を避ける。
-投稿タイプは**常に `画像付き`**。必要に応じて、画像付きのまま `コメント仕込み` を組み合わせてよい（本文中で `--- コメント1 ---` 区切り）。画像は雰囲気づくりのアイキャッチではなく、**文章を読まない人にも投稿内容がパッと分かる「視覚要約」**にする。Threadsでは、共感・気づき・問いに接続しつつ、内容の要点も見て分かる画像にする。
+- `skill/references/00-context.md`
+- `skill/templates/voice-guide.md`
+- `skill/agents/writer.md`
+- `storage/analytics/learnings.md`
 
-## 3. image2 / GPT-Image で画像生成（必須）
-1. 画像プロンプトを作り、**image2 / `gpt-image-1` のみ**で **PNG・正方形 `1024x1024`・5MB以下**を生成する。Canva、HTML/CSS、SVG、ダミー画像、手作業合成は使わない。
-2. 画像は必ず**本文の視覚要約**にする。単なる人物、PC、抽象的なAI風背景、雰囲気だけのイメージ画像は禁止。
-3. 画像プロンプトには、次の4点を明示する：
-   - `一目で伝える気づき`: 投稿の感情的な結論/問いを1つに絞る
-   - `視覚構造`: Before/After、悩み→気づき、3ステップ、比較、因果フローなど、内容が読まずに分かる構図
-   - `具体要素`: 投稿本文に出る機能名・変化・実務効果を、アイコン/図解/短いラベルで表す
-   - `避けるもの`: generic AI atmosphere, random laptop, vague futuristic background, decorative-only scene
-4. 文字を入れる場合は、**短い日本語ラベルだけ**にする（大見出し1つ＋補助ラベル2〜3個まで）。長文を画像に入れない。文字が崩れそうな時は、アイコン・矢印・比較構図で意味を伝える。
-5. 保存先＝**`storage/images/<投稿ID>.png`**（ファイル名は投稿IDと完全一致・小文字 `.png`）。
-6. 本文ブロックに **`- 画像ファイル: storage/images/<投稿ID>.png`** 行を必ず入れる。
-7. 画像が壊れていないこと、投稿内容と整合していること、**画像だけ見ても本文の要点が伝わること**、5MB以下であることを確認する。
-8. **⚠️ Threads は画像を公開URL（`raw.githubusercontent.com/.../main/storage/images/<ID>.png`）で添付する。**
-   → **poster を実行する前に、画像を commit & push して main に上げておくこと**（未pushだとURLが404になり本文のみで配信される）：
-   ```bash
-   git add storage/images/<ID>.png && git commit -m "add image for <ID>" && git push
-   ```
-9. push 後、公開URLが `200` で取得できることを確認する：
-   ```bash
-   curl -I -L https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/<ID>.png
-   ```
-10. 画像生成・保存・公開URL確認のいずれかに失敗した場合は**投稿しない**。本文のみ投稿で妥協しない。
+ネタはWebSearch等で、直近1週間の海外Claude Code / Codex / AI開発エージェント関連情報を確認する。Threadsでは、最新情報を「私の体験・気づき・読者への問い」に接続する。
 
-## 4. pending.md に1件だけ追記
-`storage/stocks/pending.md` 末尾に1件 append（フォーマット厳守。既存は消さない）：
+## 2. 投稿IDを決める
 
-```
-## {ID}
-- 種類: 画像付き
-- 投稿想定時刻: {SLOT}（自動・直投稿）
-- 想定日: {YYYY-MM-DD（曜）}
-- 軸: {軸/カテゴリ}
-- ソース: {一次ソースURL}
-- 画像ファイル: storage/images/{ID}.png
-- 文面:
+形式: `YYYY-MM-DD-NNN`
 
-{本文（必ず問いかけで締める）}
+| 投稿枠 | suffix |
+|---|---:|
+| 朝 | 701 |
+| 昼 | 702 |
+| 夜 | 703 |
 
-- ステータス: pending
+同じIDの画像やpending/postedが既にあれば、704以降へ1つずつずらす。
 
----
-```
-- **ID** = `YYYY-MM-DD-NNN`、NNN は **朝=701 / 昼=702 / 夜=703**。
-- `投稿想定時刻:` は先頭が `朝`/`昼`/`夜`。
-- 画像付きコメント仕込みにする場合も `種類` は `画像付き` のままにし、本文ブロック内で `--- コメント1 ---` 区切りを使う。
+## 3. 投稿文を作る
 
-## 5. 自己チェック（必須・在庫が無いぶんの唯一の安全網）
-全部満たすか確認。1つでもNGなら §2 へ戻って作り直す（最大2回）：
-- [ ] 200-400字（最大500字）。コメント仕込みは各セグメントも500字以内
-- [ ] **問いかけで締めている**
-- [ ] 一人称「私」／絵文字1個まで／共感・対話トーン
-- [ ] **禁止語なし**：本名「石井」「ミライ塾」「アトリエの店主」その他個人特定
-- [ ] 直近1週間のフレッシュネタ・一次ソースと矛盾しない
-- [ ] `種類: 画像付き` で、`画像ファイル` 行があり、PNGが実在する
-- [ ] 画像が壊れていない・本文と整合・5MB以下
-- [ ] 画像がただのイメージ画像ではなく、投稿本文の「視覚要約」になっている
-- [ ] 画像だけ見ても、何が新しいか/何に気づいたか/読者に何を問いかけているかが分かる
-- [ ] 画像は poster 実行前に push 済みで、raw.githubusercontent.com の公開URLが `200`
-- 2回ダメ → **投稿せず** `storage/analytics/routine.log` に `skip: <理由>` を残して正常終了。
+- 200-400字目安、最大500字。
+- 必ず問いかけで締める。
+- 一人称「私」。
+- 絵文字0-1個。
+- 体験・失敗・気づきを主役にする。
+- 投稿タイプは常に `画像付き`。
 
-## 6. 送信（= 既存 poster を実行。これが Threads API 記載元）
-**`scripts/threads_poster.py` を実行する。** これが Threads Graph API の実装（`/{user-id}/threads` でコンテナ作成 → `/{user-id}/threads_publish` で公開・`reply_to_id` でセルフリプライ・`image_url` で画像・一過性429/5xxリトライ・冪等ガード）。
+## 4. image2で画像を作る
+
+image2に渡す画像プロンプトには以下を必ず含める:
+
+- 一目で伝える気づき
+- 視覚構造（悩み→気づき、Before/After、3ステップ、比較、因果フローなど）
+- 具体要素（機能名、変化、実務効果、問い）
+- 避けるもの（generic AI atmosphere, random laptop, decorative-only scene）
+
+画像仕様:
+
+- PNG
+- 推奨サイズ: 正方形 `1024x1024`
+- 5MB以下
+- 保存先: `storage/images/<ID>.png`
+- 日本語テキストを入れる場合は短いラベルだけ。長文は禁止。
+
+Threadsは投稿時に `raw.githubusercontent.com/.../main/storage/images/<ID>.png` をThreads APIへ渡す。したがって、画像は必ずcommit & push済みにする。
+
+## 5. queueスクリプトでpendingに積む
+
+本文を一時ファイルに保存し、必要なら画像プロンプトも一時ファイルに保存してから実行する。
 
 ```bash
-cd <repo>
-REQUIRE_IMAGE=1 SKIP_JITTER=1 python scripts/threads_poster.py
+python scripts/queue_image2_post.py \
+  --post-id "<ID>" \
+  --slot "<朝|昼|夜>" \
+  --axis "<軸>" \
+  --source "<一次ソースURLまたはタイトル>" \
+  --image "storage/images/<ID>.png" \
+  --text-file "/tmp/threads-post.txt" \
+  --image-prompt-file "/tmp/threads-image-prompt.txt"
 ```
-- 認証は §0 の環境変数から自動取得。`SKIP_JITTER=1` で遅延を切る。
-- **画像の事前 push と公開URL確認を済ませてから実行**（でないと画像URLが404）。
-- `REQUIRE_IMAGE=1` により、画像ファイルが無い・公開URLが取れない・画像投稿に失敗した場合は**本文のみ投稿せず失敗**する。
-- poster は pending の該当スロット1件を **Threads に投稿** → `posted.md` に移動 → `pending.md` から削除 → `post-state.json` にマーク。
-- dry-run：`python scripts/threads_poster.py --dry-run`。
 
-## 7. 結果を commit & push
+このスクリプトが検査するもの:
+
+- ID形式
+- 画像パスが `storage/images/<ID>.png`
+- PNG実在、PNG形式、5MB以下
+- Threads文字数
+- 問いかけで締めていること
+- 禁止語
+- 同じslotがpendingに重複していないこと
+
+## 6. 最終確認
+
 ```bash
-git add storage/stocks/pending.md storage/stocks/posted.md storage/images storage/analytics/scheduler.log storage/analytics/post-state.json storage/analytics/routine.log
-git commit -m "post: sent Threads {SLOT} {ID}"
-git push
+git diff -- storage/stocks/pending.md
+python scripts/queue_image2_post.py --help >/dev/null
 ```
-- ※poster が pending を空に戻すので、push しても GitHub Actions の送信ワークフローは**起動しない/no-op**（二重投稿しない）。GitHub Actions は予備の送信経路。
 
----
+`pending.md` に1件だけ追加され、画像ファイルが存在することを確認する。
 
-## API 記載元（このリポジトリ内）
-| 何 | ファイル |
-|---|---|
-| **Threads API の実装そのもの**（コンテナ作成→公開・リプライ・画像URL・リトライ） | **`scripts/threads_poster.py`** |
-| 口調・型・軸・テンプレ | `skill/templates/voice-guide.md` / `skill/agents/writer.md` / `skill/references/*` |
-| 学習ルール（毎回反映） | `storage/analytics/learnings.md` |
+## 7. commit & push
 
-> Threads API 公式: コンテナ作成 `POST https://graph.threads.net/v1.0/{user-id}/threads`、公開 `POST .../threads_publish`。詳細は上記 poster 実装が正。
+投稿はしない。GitHubへ積むだけ。
 
-## 鉄則
-- 完全無人。人間に承認を求めない（クラウド実行・止まると失敗）。
-- **必ず問いかけで締める**。自己チェックに通らなければ**投稿しない**。
-- **毎回画像付き**。画像生成・保存・公開・添付のどこかで失敗したら本文のみ投稿に逃げない。
-- 画像は**本文の視覚要約**。雰囲気だけのAI画像、汎用的なPC作業風景、装飾だけの背景は禁止。
-- キーをコミットしない。`pending.md` を壊さない。エラー時も log に残して終了。
-- 在庫は溜めない（pending は1本だけ）。Threads用画像を x repo に置かない。
+```bash
+git add storage/stocks/pending.md storage/images/<ID>.png
+git commit -m "queue: Threads <SLOT> image2 post <ID>"
+git push origin main
+```
+
+GitHub Actionsが投稿時刻に `pending.md` を読み、`REQUIRE_IMAGE=1` で画像付き投稿する。投稿後はActionsが `posted.md` へ移動してcommitする。
+
+## 失敗時
+
+失敗したら本文だけを積まない。可能なら `storage/analytics/routine.log` に理由を追記してcommitする。
+
+例:
+
+```text
+2026-06-17T18:45:00+09:00 [codex-image2-queue] skip: image2 generation failed for <ID>
+```

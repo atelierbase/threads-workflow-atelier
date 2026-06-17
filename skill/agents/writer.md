@@ -43,7 +43,7 @@
 [続き＋出典＋もう一段の問いかけ]
 ```
 
-### C. 画像付き（約1/3・Path B 半手動）
+### C. 画像付き（現行運用では毎回）
 `種類: 画像付き`。
 ```
 - 画像プロンプト: [GPT(image)用。情報カード/インフォグラフィック想定]
@@ -51,7 +51,7 @@
 - 文面:
 [本文・短め・問いかけ必須]
 ```
-> Threads API は画像を**公開URL**で渡すため、画像は repo にコミットされ `raw.githubusercontent.com` のURLで参照される。未配置ならフォールバックで本文のみ投稿。
+> Threads API は画像を**公開URL**で渡すため、画像は repo にコミットされ `raw.githubusercontent.com` のURLで参照される。画像が未配置の場合は pending に積まない。GitHub Actions は `REQUIRE_IMAGE=1` で動くため、本文のみ投稿へフォールバックしない。
 
 ## 出力（pending.md フォーマット）
 
