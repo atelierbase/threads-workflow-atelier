@@ -409,3 +409,20 @@ AIに作業を任せるとき、本当に怖いのは「遅いこと」よりも
 - ステータス: posted
 
 ---
+
+## 2026-06-17-701（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-17T09:58:33.737594+09:00
+- thread_id: 18054047027518809
+- URL: https://www.threads.com/@atelierbase_own/post/18054047027518809
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-17-701.png
+- 文面:
+
+OpenAIがOnaを買収し、Codexに「継続実行できるランタイム」を取り込む発表を読みました（出典: OpenAI）。私の実務目線だとこれは単なる性能向上ではなく、作業設計の前提が変わるサインです。
+私自身は普段Codexを相棒に短い反復で作業を回していますが、最近一晩かけてクラウドで自動化ジョブを回したら、朝イチで成果をレビューできて設計や監視の優先度が変わりました✨
+長時間稼働を前提にすると、あなたはまず何を整備しますか？
+
+- ステータス: posted
+
+---

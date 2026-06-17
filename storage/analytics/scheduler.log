@@ -198,3 +198,9 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-04T22:41:59.434983+09:00 [threads] container_id=17891496420511951 (image=yes, reply=no)
 2026-06-04T22:42:08.600590+09:00 [threads] POSTED main thread_id=18093840224219880
 2026-06-04T22:42:08.603435+09:00 [threads] DONE moved 2026-06-04-904 to posted (type=画像付き)
+2026-06-17T09:58:20.160437+09:00 [threads] START slot=朝 (source=POST_SLOT) dry_run=False skip_jitter=True
+2026-06-17T09:58:20.160622+09:00 [threads] credentials: env vars
+2026-06-17T09:58:20.161130+09:00 [threads] Text preview: OpenAIがOnaを買収し、Codexに「継続実行できるラ... (217 chars), comments=0, image=yes
+2026-06-17T09:58:25.629049+09:00 [threads] container_id=17893359195511951 (image=yes, reply=no)
+2026-06-17T09:58:33.736882+09:00 [threads] POSTED main thread_id=18054047027518809
+2026-06-17T09:58:33.737776+09:00 [threads] DONE moved 2026-06-17-701 to posted (type=画像付き)
