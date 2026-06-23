@@ -451,3 +451,26 @@ CodexのようなAI自動化は、作るだけなら気持ちいいです。で�
 - ステータス: posted
 
 ---
+
+## 2026-06-23-703（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-23T18:12:16.981019+09:00
+- thread_id: 17933749128297639
+- URL: https://www.threads.com/@atelierbase_own/post/17933749128297639
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-23-703.png
+- 文面:
+
+今日、Claudeのステータスを見ていて、Opus 4.8 の elevated errors が出ているのを確認しました。
+
+こういう時に思うのは、AI運用は「止まらない前提」で組むほど危ないということです。
+
+私も自動投稿を見直していて、生成側が止まると配信側だけ成功扱いになる怖さを痛感しました。
+
+大事なのは、気づく、切り替える、戻す。この3つを最初から仕込むことですね。
+
+皆さんはAIが止まった時の代替手段、用意していますか？
+
+- ステータス: posted
+
+---
