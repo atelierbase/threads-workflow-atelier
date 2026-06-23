@@ -204,3 +204,11 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-17T09:58:25.629049+09:00 [threads] container_id=17893359195511951 (image=yes, reply=no)
 2026-06-17T09:58:33.736882+09:00 [threads] POSTED main thread_id=18054047027518809
 2026-06-17T09:58:33.737776+09:00 [threads] DONE moved 2026-06-17-701 to posted (type=画像付き)
+2026-06-23T17:17:31.572140+09:00 [threads] START slot=夜 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-06-23T17:17:31.572301+09:00 [threads] credentials: env vars
+2026-06-23T17:17:31.573601+09:00 [threads] Text preview: 正直に書きます。
+
+今日、自動投稿の仕組みを確認していて、い... (219 chars), comments=0, image=yes
+2026-06-23T17:17:36.889347+09:00 [threads] container_id=17894325945511951 (image=yes, reply=no)
+2026-06-23T17:17:44.758371+09:00 [threads] POSTED main thread_id=18016956290893097
+2026-06-23T17:17:44.759185+09:00 [threads] DONE moved 2026-06-18-902 to posted (type=画像付き)
