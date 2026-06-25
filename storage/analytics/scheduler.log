@@ -218,3 +218,9 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-23T18:12:09.518592+09:00 [threads] container_id=17894330460511951 (image=yes, reply=no)
 2026-06-23T18:12:16.980365+09:00 [threads] POSTED main thread_id=17933749128297639
 2026-06-23T18:12:16.981188+09:00 [threads] DONE moved 2026-06-23-703 to posted (type=画像付き)
+2026-06-26T08:45:58.725144+09:00 [threads] START slot=朝 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-06-26T08:45:58.725311+09:00 [threads] credentials: env vars
+2026-06-26T08:45:58.726662+09:00 [threads] Text preview: Axiosの記事で、Codexの使われ方が「チャット」から「... (193 chars), comments=0, image=yes
+2026-06-26T08:46:03.127051+09:00 [threads] container_id=17894753187511951 (image=yes, reply=no)
+2026-06-26T08:46:10.944853+09:00 [threads] POSTED main thread_id=17893934487538311
+2026-06-26T08:46:10.945668+09:00 [threads] DONE moved 2026-06-26-701 to posted (type=画像付き)

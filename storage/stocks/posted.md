@@ -474,3 +474,24 @@ CodexのようなAI自動化は、作るだけなら気持ちいいです。で�
 - ステータス: posted
 
 ---
+
+## 2026-06-26-701（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-26T08:46:10.945531+09:00
+- thread_id: 17893934487538311
+- URL: https://www.threads.com/@atelierbase_own/post/17893934487538311
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-26-701.png
+- 文面:
+
+Axiosの記事で、Codexの使われ方が「チャット」から「作業を預ける」方向へ進んでいると紹介されていました。
+
+個人ユーザーの80.6%が、経験者なら30分以上かかる作業に相当する依頼を少なくとも1回出していた、という見方です。
+
+私も自動投稿やリサーチを任せる中で、AIは質問相手より「作業単位の担当者」に近づいていると感じます。
+
+皆さんは、AIにどこまで作業を預けていますか？
+
+- ステータス: posted
+
+---
