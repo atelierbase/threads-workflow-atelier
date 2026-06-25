@@ -84,6 +84,7 @@ jobs:
           TZ: Asia/Tokyo
           POST_SLOT: ${{ steps.slot.outputs.slot }}
           REQUIRE_IMAGE: "1"
+          REQUIRE_PENDING: "1"
           SKIP_JITTER: "1"
         run: python scripts/threads_poster.py
 
