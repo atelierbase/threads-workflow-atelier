@@ -495,3 +495,28 @@ Axiosの記事で、Codexの使われ方が「チャット」から「作業を�
 - ステータス: posted
 
 ---
+
+## 2026-06-26-702（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-26T16:05:39.378354+09:00
+- thread_id: 18404280781154334
+- URL: https://www.threads.com/@atelierbase_own/post/18404280781154334
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-26-702.png
+- 文面:
+
+正直、AI開発エージェントは「速く書けること」ばかり見ていました。
+
+でも、OpenAI の Codex 0.142.2（6/25）の更新を読んで、見方が少し変わりました。
+
+Tool Search は、使える道具を探す仕組み。
+承認ガードや分かりやすいエラー改善は、暴走を止めて戻るための足場なんですよね。
+
+私も最近、権限まわりを曖昧にして余計な手戻りを出しました😅
+任せる前に整える方が、結局速い。
+
+皆さんは AI に任せる前の「足場」、どこまで作っていますか？
+
+- ステータス: posted
+
+---

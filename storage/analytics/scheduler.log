@@ -224,3 +224,9 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-26T08:46:03.127051+09:00 [threads] container_id=17894753187511951 (image=yes, reply=no)
 2026-06-26T08:46:10.944853+09:00 [threads] POSTED main thread_id=17893934487538311
 2026-06-26T08:46:10.945668+09:00 [threads] DONE moved 2026-06-26-701 to posted (type=画像付き)
+2026-06-26T16:05:27.045095+09:00 [threads] START slot=昼 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-06-26T16:05:27.045298+09:00 [threads] credentials: env vars
+2026-06-26T16:05:27.047388+09:00 [threads] Text preview: 正直、AI開発エージェントは「速く書けること」ばかり見ていま... (235 chars), comments=0, image=yes
+2026-06-26T16:05:31.800800+09:00 [threads] container_id=17894797062511951 (image=yes, reply=no)
+2026-06-26T16:05:39.377703+09:00 [threads] POSTED main thread_id=18404280781154334
+2026-06-26T16:05:39.378494+09:00 [threads] DONE moved 2026-06-26-702 to posted (type=画像付き)
