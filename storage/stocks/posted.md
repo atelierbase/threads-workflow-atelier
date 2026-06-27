@@ -520,3 +520,27 @@ Tool Search は、使える道具を探す仕組み。
 - ステータス: posted
 
 ---
+
+## 2026-06-27-702（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-27T15:40:37.821789+09:00
+- thread_id: 17969012234922486
+- URL: https://www.threads.com/@atelierbase_own/post/17969012234922486
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-27-702.png
+- 文面:
+
+海外で出たCodex利用研究で、思わずメモした数字があります。
+
+利用者の26.6%が「Skills」を使っているそうです。Skillsは、毎回の指示や手順を再利用できる仕組みのこと。
+
+私も最初は、毎回プロンプトを丁寧に書けばいいと思っていました。でも投稿づくりや検証を続けるほど、うまくいく作業は“型”にして渡した方が安定するんですよね✨
+
+AIを賢くするより、私の頼み方を資産化する。
+この感覚がかなり大事だと感じています。
+
+皆さんは、AIに渡す手順をどこまで型化していますか？
+
+- ステータス: posted
+
+---

@@ -9,8 +9,7 @@ GitHub Actions（送信専用）が該当スロットで Threads へ投稿して
 - 旧来の事前ストックは `archive/pending-pre-directpost-2026-06-03.md` に退避済み。
 - フォーマットは `skill/agents/writer.md` と `storage/analytics/image-requests.md` 準拠。
 
----
-## 2026-06-27-701
+---## 2026-06-27-701
 - 種類: 画像付き
 - 投稿想定時刻: 朝（image2生成済み・GitHub Actions配信）
 - 想定日: 2026-06-27（土）
@@ -29,30 +28,6 @@ AI開発エージェントは、コードを書くAIというより「仕事を�
 増やすほど大事なのは、任せ方より戻せる単位と確認の順番でした。
 
 皆さんは、AIに並走させすぎて詰まった経験、ありますか？
-
-- ステータス: pending
-
----
-## 2026-06-27-702
-- 種類: 画像付き
-- 投稿想定時刻: 昼（image2生成済み・GitHub Actions配信）
-- 想定日: 2026-06-27（土）
-- 軸: サブ軸1（自分の実例） #Skills運用
-- ソース: arXiv: The Shift to Agentic AI: Evidence from Codex (2026-06-25) https://arxiv.org/abs/2606.26959
-- 画像プロンプト: Use case: infographic-diagram Asset type: Threads square post information card, final PNG, 1024x1024. Primary request: Create a polished Japanese information card about Codex Skills adoption. It must summarize this insight: AI work becomes stable when repeated instructions are turned into reusable workflow assets. This is an information card, not an atmosphere image. STRICT TEXT RULE: Render ONLY the exact text below. Do not put any other letters, numbers, words, UI text, labels, handwritten marks, checklist text, or captions anywhere in the image. Icons and cards must be blank/simple shapes with no internal text. Exact text to render: Top small label: 「海外調査: Codex Skills 26.6%」 Main headline: 「頼み方を\n資産にする」 Three step labels: 「型にする」 / 「渡す」 / 「見直す」 Bottom small line: 「毎回の指示を、再利用へ。」 Visual structure: three-step flow using blank icons only: 1) a messy blank note icon transforms into 2) a reusable blank workflow card icon, then 3) a blank review checklist icon with check symbols only. Use arrows between the three steps. The image should show conclusion, background, and practical action from the card alone. Style: square 1024x1024, clean editorial business infographic, warm off-white background, charcoal text, teal and warm yellow accents, generous margins, strong hierarchy, readable on mobile, modern Japanese tech account. Avoid: any extra text beyond the exact text list, generic AI atmosphere, random laptop, robots, people, faces, code rain, fake UI screenshots, tiny paragraphs, watermarks, logos, decorative-only scene, purple/blue gradient. Spell Codex and Skills exactly.
-- 画像ファイル: storage/images/2026-06-27-702.png
-- 文面:
-
-海外で出たCodex利用研究で、思わずメモした数字があります。
-
-利用者の26.6%が「Skills」を使っているそうです。Skillsは、毎回の指示や手順を再利用できる仕組みのこと。
-
-私も最初は、毎回プロンプトを丁寧に書けばいいと思っていました。でも投稿づくりや検証を続けるほど、うまくいく作業は“型”にして渡した方が安定するんですよね✨
-
-AIを賢くするより、私の頼み方を資産化する。
-この感覚がかなり大事だと感じています。
-
-皆さんは、AIに渡す手順をどこまで型化していますか？
 
 - ステータス: pending
 
