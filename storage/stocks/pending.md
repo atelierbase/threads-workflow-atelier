@@ -55,3 +55,24 @@ AI開発エージェントは、コードを書くAIというより「仕事を�
 - ステータス: pending
 
 ---
+## 2026-06-28-702
+- 種類: 画像付き
+- 投稿想定時刻: 昼（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-06-28（日）
+- 軸: サブ軸1（自分の実例） #AIレビュー設計
+- ソース: arXiv: Augmentation with Dilution (2026-06-24) https://arxiv.org/abs/2606.26289
+- 画像プロンプト: Use case: infographic-diagram Asset type: Threads square post information card, final PNG, 1024x1024. Primary request: Create a minimal, polished Japanese information card about a recent overseas research paper on AI coding agent adoption and human contributor ecosystems. It must be an information card, not a mood image. A viewer should understand: AI speeds up implementation, but teams must preserve review and learning space. Canvas and style: square 1024x1024, warm off-white background, deep charcoal text, restrained teal and amber accents, high contrast, clean editorial business infographic, large mobile-readable Japanese typography, generous margins. STRICT LAYOUT: Use only five text areas total: 1 top label, 1 main headline, 3 small action blocks, 1 bottom line. No other written words anywhere. The icons and diagram shapes must contain no text, no fake code letters, no UI labels, no captions, no numbers. Render exactly this text and nothing else: 1) Top label: 「海外調査: 11,097 repo」 2) Main headline: 「AIで速く作るほど\n学ぶ余白を残す」 3) Three small blocks: 「新人参加 ↓」 「レビュー深さ ↑」 「場を作る」 4) Bottom line: 「実装後に、人が学べる設計を。」 Visual structure: simple left-to-right cause-and-action flow using only unlabeled shapes: left = fast stacked task cards and speed lines; center = review checkpoint symbol; right = circular learning loop symbol. Place the three small action blocks below the flow. Keep the diagram clean and abstract, with no people, no faces, no laptops. The conclusion is the main headline. Avoid: any text not listed above, extra labels, column headings, source names, tiny paragraphs, fake UI text, code snippets, random laptop, generic AI atmosphere, glowing brain, robots, people, faces, code rain, watermark, logo, purple/blue gradient, misspelled Japanese.
+- 画像ファイル: storage/images/2026-06-28-702.png
+- 文面:
+
+海外のAI開発エージェント研究を読んで、少しハッとしました。
+
+11,097件のGitHubリポジトリ調査では、AI導入後も人間の人数自体は大きく減らない一方、新人の参加比率は3.7pt低下。レビュー、つまり変更を人が確かめる工程は5.3%深くなったそうです。
+
+私もAIに実装を任せるほど、書く時間は減るのに「確認する力」と「人が学ぶ余白」を残す設計が大事だと感じています✨
+
+皆さんの現場では、AIに任せた後のレビューや学びの場をどう残していますか？
+
+- ステータス: pending
+
+---
