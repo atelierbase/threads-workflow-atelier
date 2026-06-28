@@ -6,3 +6,4 @@
 2026-06-04 22:05 JST | skip: 2026-06-04-703 git push failed after 3 attempts (Could not resolve host: github.com); raw image URL not verified, pending not appended, poster not run
 2026-06-17T09:57:16.207365+09:00 [generate-image-post] start generation platform=threads slot=朝 id=2026-06-17-701
 2026-06-17T09:58:10.975467+09:00 [generate-image-post] queued 2026-06-17-701 image=storage/images/2026-06-17-701.png
+2026-06-28T10:31:32+09:00 [codex-image2-queue] queued 2026-06-28-701 for slot 朝; note existing pending 2026-06-27-701 remains in the same slot, so Actions will process the first morning block before the new one
