@@ -54,3 +54,25 @@ AI開発エージェントは、使うほどトークン費用が増える道具
 - ステータス: pending
 
 ---
+## 2026-06-29-703
+- 種類: 画像付き
+- 投稿想定時刻: 夜（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-06-29（月）
+- 軸: サブ軸2（実業家視点） #AI権限設計
+- ソース: TechRadar/OALABS: AI agents Claude Code and Codex breach reporting (2026-06-22) https://www.techradar.com/pro/security/a-newbie-hacker-used-vague-low-skill-prompts-in-claude-and-codex-to-breach-14-companies-and-the-ai-agents-did-all-the-legwork
+- 画像プロンプト: Use case: infographic-diagram Asset type: Threads square post information card, final PNG, 1024x1024. Primary request: Create one polished Japanese information card summarizing a Threads post about recent overseas security reporting from TechRadar/OALABS: AI development agents such as Claude Code and Codex can amplify execution ability when users give broad permissions, so practical teams should pair speed with permission boundaries, logs, and human stop points. This must be an information card, not a mood image or generic AI atmosphere. A viewer should understand the conclusion, background, and practical action from the image alone. Core insight: AI development agents are powerful because they can act, not just answer. Do not hand over broad authority casually. Design three safeguards before scaling usage: limit permissions, keep logs, and define where a human can stop/review. Canvas and style: square 1024x1024, clean editorial business infographic, readable Japanese typography, warm off-white background, deep charcoal text, restrained accents in teal, muted red, and amber, generous margins, high contrast, mobile-readable, polished spacing. Use crisp flat vector-like diagram shapes. STRICT TEXT RULE: Render ONLY the exact Japanese text below. Do not add any other letters, numbers, source names, UI text, code text, captions, tiny paragraphs, watermarks, or logos anywhere in the image. Icons and diagram shapes must be blank/simple shapes with no internal text. Exact text to render: Top small label: 「海外報道: AIエージェント」 Main headline, large and strong: 「AIに権限だけ\n渡さない」 Three compact action blocks: 「権限を絞る」 / 「ログを残す」 / 「人が止める」 Bottom small line: 「速さには、止め方もセット。」 Visual structure: a clear defensive 3-step flow from left to right. Left: a permission gate or keyhole with a narrow boundary, showing limited access. Center: a clean audit trail/log line with blank task cards and check dots. Right: a human review stop point represented by a simple stop switch/checkpoint icon, with no people or faces. Use arrows and grouping to show permission boundary -> traceable logs -> human stop/review. Constraints: short labels only, no long paragraphs, no decorative-only scene, no random laptop, no robots, no humanoid icons, no faces, no people, no malware imagery, no exploit/code visuals, no fake UI screenshots, no unreadable tiny text, no generic glowing AI background, no purple/blue gradient. Prioritize exact Japanese text accuracy for the headline, top label, three action labels, and bottom line.
+- 画像ファイル: storage/images/2026-06-29-703.png
+- 文面:
+
+海外のセキュリティ報道で、少し背筋が伸びました。
+
+OALABSの分析では、低スキルの攻撃者がClaude CodeやCodexを使い、14社の侵害に関わったとされています。AI開発エージェントは、指示を受けて調査や実行を進めるAIのことです。
+
+私も便利さに慣れるほど、「この権限まで渡して大丈夫か」を後回しにしがちでした😅
+速さをくれる道具ほど、権限を絞る、ログを残す、人が止める設計が必要ですね。
+
+皆さんは、AIに渡す権限の線引き、どこで決めていますか？
+
+- ステータス: pending
+
+---
