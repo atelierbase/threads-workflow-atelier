@@ -9,8 +9,7 @@ GitHub Actions（送信専用）が該当スロットで Threads へ投稿して
 - 旧来の事前ストックは `archive/pending-pre-directpost-2026-06-03.md` に退避済み。
 - フォーマットは `skill/agents/writer.md` と `storage/analytics/image-requests.md` 準拠。
 
----
-## 2026-06-27-701
+---## 2026-06-27-701
 - 種類: 画像付き
 - 投稿想定時刻: 朝（image2生成済み・GitHub Actions配信）
 - 想定日: 2026-06-27（土）
@@ -51,29 +50,6 @@ AI開発エージェントは、使うほどトークン費用が増える道具
 大事なのは、予算を決めて試し、価値が見えた作業だけ残すこと。
 
 皆さんは、AIのコスト管理と実験の余白、どちらを先に設計していますか？
-
-- ステータス: pending
-
----
-## 2026-06-29-702
-- 種類: 画像付き
-- 投稿想定時刻: 昼（image2生成済み・GitHub Actions配信）
-- 想定日: 2026-06-29（月）
-- 軸: サブ軸1（自分の実例） #AI利用証跡
-- ソース: arXiv: Detecting AI Coding Agents in Open Source (2026-06-23) https://arxiv.org/abs/2606.24429
-- 画像プロンプト: Use case: infographic-diagram Asset type: Threads square post information card, final PNG, 1024x1024. Primary request: Create one polished Japanese information card summarizing a Threads post about a recent overseas arXiv study on detecting AI coding agent traces across 180M+ repositories. This must be an information card, not a mood image or generic AI atmosphere. A viewer should understand the conclusion, background, and practical action from the image alone. Core insight to communicate: AI development agent work is often invisible if you only look at obvious bot names or PRs. The study found Claude Code activity can be undercounted by about 30x when relying on bot-account lookup alone. Practical action: leave clear traces of what was delegated to AI, what changed, and what was reviewed. Canvas and style: square 1024x1024, clean editorial business infographic, readable Japanese typography, warm off-white background, deep charcoal text, restrained accents in teal and muted amber, generous margins, high contrast, mobile-readable, polished spacing. STRICT TEXT RULE: Render ONLY the exact Japanese text below. Do not add any other letters, numbers, source names, UI text, fake code text, captions, or tiny paragraphs anywhere in the image. Icons and diagram shapes must be blank/simple shapes with no internal text. Exact text to render: Top small label: 「海外研究: AIエージェント」 Main headline, large and strong: 「AI作業は\n見える形で\n残す」 Three compact action blocks: 「30倍見落とし」 / 「証跡を残す」 / 「レビュー確認」 Bottom small line: 「任せた仕事は、あとで追える形に。」 Visual structure: a clear cause-to-action flow. Left: hidden layered commit cards partly under a magnifying glass, using ONLY blank document cards, neutral dots, and simple abstract marks. Center: a clean audit trail line with blank task cards and check dots. Right: a review checkpoint with a blank checklist and simple check mark. Use arrows and grouping to show hidden traces -> recorded evidence -> review confidence. Hard avoid: absolutely no robots, no robot head, no humanoid icons, no faces, no people, no mascots, no decorative character, no laptop, no fake app UI, no code rain, no glowing brain, no generic AI atmosphere, no extra labels, no watermark, no logo, no purple/blue gradient. Prioritize exact Japanese text accuracy for the headline, top label, three action labels, and bottom line.
-- 画像ファイル: storage/images/2026-06-29-702.png
-- 文面:
-
-海外の新しいAI開発エージェント研究で、ハッとしました。
-
-180M超のGitリポジトリ（コード履歴）を調べると、Claude Codeの痕跡はbot名だけだと約30倍も少なく見えるそうです。
-PR（コード変更のレビュー依頼）より、コミットや設定ファイルに静かに残る使われ方も多いんですね。
-
-私も最近、AIに任せた作業を「後で見れば分かる」と思って、メモを薄くして後悔しました😅
-速く作るほど、何をAIに任せたかの証跡が安心材料になります。
-
-皆さんは、AIに任せた作業の記録、どこまで残していますか？
 
 - ステータス: pending
 
