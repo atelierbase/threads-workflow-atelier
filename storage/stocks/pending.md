@@ -9,7 +9,8 @@ GitHub Actions（送信専用）が該当スロットで Threads へ投稿して
 - 旧来の事前ストックは `archive/pending-pre-directpost-2026-06-03.md` に退避済み。
 - フォーマットは `skill/agents/writer.md` と `storage/analytics/image-requests.md` 準拠。
 
----## 2026-06-27-701
+---
+## 2026-06-27-701
 - 種類: 画像付き
 - 投稿想定時刻: 朝（image2生成済み・GitHub Actions配信）
 - 想定日: 2026-06-27（土）
@@ -28,6 +29,28 @@ AI開発エージェントは、コードを書くAIというより「仕事を�
 増やすほど大事なのは、任せ方より戻せる単位と確認の順番でした。
 
 皆さんは、AIに並走させすぎて詰まった経験、ありますか？
+
+- ステータス: pending
+
+---
+## 2026-06-29-701
+- 種類: 画像付き
+- 投稿想定時刻: 朝（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-06-29（月）
+- 軸: 主軸（海外翻訳） #AIコスト実験
+- ソース: Business Insider: Claude Code creator Boris Cherny on AI ROI and experimentation (2026-06-23) https://www.businessinsider.com/boris-cherny-anthropic-token-cost-roi-ai-2026-6
+- 画像プロンプト: Use case: infographic-diagram Asset type: Threads square post information card, final PNG, 1024x1024. Primary request: Create a polished Japanese information card summarizing a Threads post about recent overseas comments from Claude Code creator Boris Cherny: companies should watch ROI, but should not restrict AI agent experimentation too early. This must be an information card, not a mood image or generic AI atmosphere. A viewer should understand the conclusion, background, and practical action from the image alone. Core insight: For AI development agents, do not clamp down on usage before finding what creates value. Set a safe budget, run small experiments, then keep only the work with visible ROI. Canvas and style: square 1024x1024, clean editorial business infographic, readable Japanese typography, warm off-white background, deep charcoal text, restrained accents in teal and amber, generous margins, high contrast, mobile-readable, polished spacing. STRICT TEXT RULE: Render ONLY the exact text below. Do not add any other letters, numbers, source names, UI text, fake code text, captions, or tiny paragraphs anywhere in the image. Icons and diagram shapes must be blank/simple shapes with no internal text. Exact text to render: Top small label: 「海外発言: Claude Code」 Main headline, large and strong: 「AI予算は\n締める前に\n試す」 Three compact action blocks: 「予算枠」 / 「小さく実験」 / 「価値で残す」 Bottom small line: 「ROIは、使い道が見えてから。」 Visual structure: a clear 3-step flow from left to right. Left: a simple budget frame or coin/token stack showing a safe spending boundary. Center: a small experiment tray or sandbox with blank task cards moving through it. Right: selected blank task cards with check marks and a simple ROI gauge icon. Show the practical action through structure: budget -> experiment -> keep valuable work. Constraints: short labels only, no long paragraphs, no decorative-only scene, no people, no faces, no robots, no random laptop, no glowing brain, no code rain, no fake UI screenshots, no unreadable tiny text, no generic AI atmosphere, no watermark, no logo, no purple/blue gradient. Prioritize exact Japanese text accuracy for the headline, top label, three action labels, and bottom line.
+- 画像ファイル: storage/images/2026-06-29-701.png
+- 文面:
+
+Claude Codeの作り手 Boris Cherny 氏が、AI投資はROI（投資対効果）を見つつ、早すぎる制限で実験を止めない方がいいと話していました。
+
+AI開発エージェントは、使うほどトークン費用が増える道具です。私も最近、コストを気にしすぎて、小さな検証まで絞りそうになりました。
+
+でも、最初から締めすぎると「何が効くか」を見つける前に止まるんですよね✨
+大事なのは、予算を決めて試し、価値が見えた作業だけ残すこと。
+
+皆さんは、AIのコスト管理と実験の余白、どちらを先に設計していますか？
 
 - ステータス: pending
 
