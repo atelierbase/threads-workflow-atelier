@@ -256,3 +256,9 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-29T17:29:15.264847+09:00 [threads] container_id=17895312393511951 (image=yes, reply=no)
 2026-06-29T17:29:23.370245+09:00 [threads] POSTED main thread_id=18136588450565376
 2026-06-29T17:29:23.371311+09:00 [threads] DONE moved 2026-06-29-702 to posted (type=画像付き)
+2026-06-30T08:16:22.539421+09:00 [threads] START slot=朝 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-06-30T08:16:22.539586+09:00 [threads] credentials: env vars
+2026-06-30T08:16:22.540854+09:00 [threads] Text preview: 正直、AIに任せた変更をあとから追うのが怖くなる時があります... (252 chars), comments=0, image=yes
+2026-06-30T08:16:26.502045+09:00 [threads] container_id=17895416259511951 (image=yes, reply=no)
+2026-06-30T08:16:33.921210+09:00 [threads] POSTED main thread_id=18154191274488506
+2026-06-30T08:16:33.922015+09:00 [threads] DONE moved 2026-06-30-701 to posted (type=画像付き)

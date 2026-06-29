@@ -610,3 +610,25 @@ PR（コード変更のレビュー依頼）より、コミットや設定ファ
 - ステータス: posted
 
 ---
+
+## 2026-06-30-701（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-30T08:16:33.921880+09:00
+- thread_id: 18154191274488506
+- URL: https://www.threads.com/@atelierbase_own/post/18154191274488506
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-30-701.png
+- 文面:
+
+正直、AIに任せた変更をあとから追うのが怖くなる時があります。
+
+自分の小さなサービスでも、PRだけ見て安心していたら、設定ファイルやcommitの履歴に大事な手がかりが残っていて、確認が後手に回ったことがありました。
+
+6/23公開の arXiv 論文では、PRベースの調査はcommitで検出されたClaude Code採用の79%を見逃す、という結果がありました。PRとは変更提案の入口のことです。
+
+便利さより先に、追える設計。
+最初に整えるなら、権限・ログ・レビュー線引きのどれから始めますか？
+
+- ステータス: posted
+
+---
