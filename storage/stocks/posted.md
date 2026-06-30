@@ -632,3 +632,25 @@ PR（コード変更のレビュー依頼）より、コミットや設定ファ
 - ステータス: posted
 
 ---
+
+## 2026-06-30-702（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-06-30T16:06:19.732567+09:00
+- thread_id: 18109531195750916
+- URL: https://www.threads.com/@atelierbase_own/post/18109531195750916
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-06-30-702.png
+- 文面:
+
+正直、Codexを回す時だけ「今日どこまで任せるか」で迷います。
+
+夢中で並列実行していると、気づいたら上限や待ち時間が先に来て、作りたい流れが止まることがあるんですよね。
+
+Business Insiderは6/29、Codexの利用上限が想定より早く減る報告を受け、OpenAIが調査用のwarroomを置いたと報じていました。利用上限は、AIに使える計算量の枠です。
+
+AIエージェントは速い。でも、無限前提で設計すると詰まる。
+あなたなら先に決めるのは、1日の上限・並列数・手動に戻す線引きのどれですか？
+
+- ステータス: posted
+
+---

@@ -262,3 +262,9 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-30T08:16:26.502045+09:00 [threads] container_id=17895416259511951 (image=yes, reply=no)
 2026-06-30T08:16:33.921210+09:00 [threads] POSTED main thread_id=18154191274488506
 2026-06-30T08:16:33.922015+09:00 [threads] DONE moved 2026-06-30-701 to posted (type=画像付き)
+2026-06-30T16:06:06.893511+09:00 [threads] START slot=昼 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-06-30T16:06:06.893675+09:00 [threads] credentials: env vars
+2026-06-30T16:06:06.894977+09:00 [threads] Text preview: 正直、Codexを回す時だけ「今日どこまで任せるか」で迷いま... (256 chars), comments=0, image=yes
+2026-06-30T16:06:12.129698+09:00 [threads] container_id=17895461751511951 (image=yes, reply=no)
+2026-06-30T16:06:19.731948+09:00 [threads] POSTED main thread_id=18109531195750916
+2026-06-30T16:06:19.732695+09:00 [threads] DONE moved 2026-06-30-702 to posted (type=画像付き)
