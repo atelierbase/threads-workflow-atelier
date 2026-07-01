@@ -697,3 +697,26 @@ Claude Statusは6/23、複数モデルへのリクエストで7:08〜8:33 PTに�
 - ステータス: posted
 
 ---
+
+## 2026-07-02-701（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-07-02T08:43:45.113367+09:00
+- thread_id: 18102637772328356
+- URL: https://www.threads.com/@atelierbase_own/post/18102637772328356
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-07-02-701.png
+- 文面:
+
+正直、AIに長めの修正を任せたあと、差分だけ見て「たぶん大丈夫」と済ませたくなる日があります。
+
+でもあとで不具合が出ると、どこで判断が曲がったのか追えなくて怖いんですよね。
+
+6月29日のarXiv論文「TraceLab」は、Claude CodeやCodexなどの実利用約4,300セッションを分析し、AIエージェントが多数のツール操作をしながら長く自走する実態を示していました。セッションは、1回の作業単位のことです。
+
+気づきは、最後の差分だけでなく「道中」を見える形で残すこと。
+
+あなたは長めのAI作業、先に見るならコマンドログですか？それとも最終差分ですか？
+
+- ステータス: posted
+
+---

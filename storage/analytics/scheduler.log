@@ -282,3 +282,9 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-07-01T16:52:20.634231+09:00 [threads] container_id=17895615768511951 (image=yes, reply=no)
 2026-07-01T16:52:28.548860+09:00 [threads] POSTED main thread_id=18129784759535135
 2026-07-01T16:52:28.549693+09:00 [threads] DONE moved 2026-07-01-702 to posted (type=画像付き)
+2026-07-02T08:43:33.169170+09:00 [threads] START slot=朝 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-07-02T08:43:33.169332+09:00 [threads] credentials: env vars
+2026-07-02T08:43:33.170536+09:00 [threads] Text preview: 正直、AIに長めの修正を任せたあと、差分だけ見て「たぶん大丈... (286 chars), comments=0, image=yes
+2026-07-02T08:43:37.525072+09:00 [threads] container_id=17895723948511951 (image=yes, reply=no)
+2026-07-02T08:43:45.112669+09:00 [threads] POSTED main thread_id=18102637772328356
+2026-07-02T08:43:45.113521+09:00 [threads] DONE moved 2026-07-02-701 to posted (type=画像付き)
