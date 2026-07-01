@@ -33,3 +33,26 @@ Business Insiderは6月30日、Codexでauto-reviewやsubagentsが想定より多
 - ステータス: pending
 
 ---
+## 2026-07-02-701
+- 種類: 画像付き
+- 投稿想定時刻: 朝（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-07-02（木）
+- 軸: 主軸（海外翻訳） #1
+- ソース: arXiv: TraceLab: A Dataset for Agentic Code Intelligence from Real-World Trace Log (https://arxiv.org/abs/2606.30560)
+- 画像プロンプト: Create a square 1024x1024 PNG Japanese Threads insight card. This is a post summary information card, not an atmosphere image. It must communicate this realization from a personal post about Claude Code / Codex and AI coding agents: when an AI agent runs for a long time, the important thing is not only the final diff but whether you can see the path it took. The viewer should understand the conclusion, background, and practical action from the image alone. Visible text: use ONLY these exact Japanese text blocks, no other visible words, no English, no dates, no source names, no research labels, no footer, no watermark: 1. Main headline, very large: 「任せた道中、見えていますか」 2. Small subheadline: 「長く走るほど、ログが命綱」 3. Left label: 「頼む」 4. Center label: 「走る」 5. Right label: 「振り返る」 Visual structure: a Before/After plus path-trace flow, not a fixed 3-column research card. Left side shows a small request card entering an AI work path. Center shows a long winding route with many small tool-step dots and a few amber uncertainty markers, conveying a long autonomous loop. Right side shows a calm review panel with a highlighted trail/log and a green check, conveying that the path is reviewable. Use a curved route from left to center to right so it reads 「頼む」→「走る」→「振り返る」. The visual anchor is the traceable path, not a laptop or robot. Design: modern Japanese business infographic for Threads, high legibility, off-white background, deep charcoal headline, blue for request/work path, amber for uncertainty, green for review/completion, subtle red only for caution. Maximum 5 text blocks, large typography, generous spacing, short labels only. Avoid generic AI atmosphere, random laptop, decorative-only scene, robot mascot, research summary card, dense UI, tiny explanatory text, source/date labels. Ensure Japanese text is correctly spelled with no garbling, especially 「任せた道中、見えていますか」「長く走るほど、ログが命綱」「頼む」「走る」「振り返る」.
+- 画像ファイル: storage/images/2026-07-02-701.png
+- 文面:
+
+正直、AIに長めの修正を任せたあと、差分だけ見て「たぶん大丈夫」と済ませたくなる日があります。
+
+でもあとで不具合が出ると、どこで判断が曲がったのか追えなくて怖いんですよね。
+
+6月29日のarXiv論文「TraceLab」は、Claude CodeやCodexなどの実利用約4,300セッションを分析し、AIエージェントが多数のツール操作をしながら長く自走する実態を示していました。セッションは、1回の作業単位のことです。
+
+気づきは、最後の差分だけでなく「道中」を見える形で残すこと。
+
+あなたは長めのAI作業、先に見るならコマンドログですか？それとも最終差分ですか？
+
+- ステータス: pending
+
+---
