@@ -276,3 +276,9 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-06-30T21:26:18.533452+09:00 [threads] container_id=17895496653511951 (image=yes, reply=no)
 2026-06-30T21:26:26.216687+09:00 [threads] POSTED main thread_id=17898400029329191
 2026-06-30T21:26:26.217548+09:00 [threads] DONE moved 2026-06-30-703 to posted (type=画像付き)
+2026-07-01T16:52:16.129279+09:00 [threads] START slot=昼 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-07-01T16:52:16.129520+09:00 [threads] credentials: env vars
+2026-07-01T16:52:16.130891+09:00 [threads] Text preview: 正直、外部repoをAIに触らせる時だけ、まだ少し怖いです。... (271 chars), comments=0, image=yes
+2026-07-01T16:52:20.634231+09:00 [threads] container_id=17895615768511951 (image=yes, reply=no)
+2026-07-01T16:52:28.548860+09:00 [threads] POSTED main thread_id=18129784759535135
+2026-07-01T16:52:28.549693+09:00 [threads] DONE moved 2026-07-01-702 to posted (type=画像付き)

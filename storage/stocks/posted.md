@@ -676,3 +676,24 @@ Claude Statusは6/23、複数モデルへのリクエストで7:08〜8:33 PTに�
 - ステータス: posted
 
 ---
+
+## 2026-07-01-702（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-07-01T16:52:28.549525+09:00
+- thread_id: 18129784759535135
+- URL: https://www.threads.com/@atelierbase_own/post/18129784759535135
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-07-01-702.png
+- 文面:
+
+正直、外部repoをAIに触らせる時だけ、まだ少し怖いです。
+
+急いで試したい時ほど「cloneして初期化して」と丸投げしたくなるんですが、Tom’s Hardwareは6月28日、Mozilla 0dinチームが“きれいに見えるGitHub repo”経由でClaude Codeに悪意ある初期化手順を実行させる例を示した、と報じていました。repoはコード置き場のことです。
+
+気づきは、AIを疑うより先に「実行前に止まる場所」を作ること。
+
+あなたなら最初に整えるのは、外部repoの実行許可ルールですか？それとも通信ログの確認ですか？
+
+- ステータス: posted
+
+---
