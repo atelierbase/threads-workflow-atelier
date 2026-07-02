@@ -288,3 +288,9 @@ AIのおかげで、サービスを前... (241 chars), comments=0, image=no
 2026-07-02T08:43:37.525072+09:00 [threads] container_id=17895723948511951 (image=yes, reply=no)
 2026-07-02T08:43:45.112669+09:00 [threads] POSTED main thread_id=18102637772328356
 2026-07-02T08:43:45.113521+09:00 [threads] DONE moved 2026-07-02-701 to posted (type=画像付き)
+2026-07-02T15:52:45.615489+09:00 [threads] START slot=昼 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-07-02T15:52:45.615666+09:00 [threads] credentials: env vars
+2026-07-02T15:52:45.617118+09:00 [threads] Text preview: 正直、AIを並列で走らせるほど、最後に私が詰まる日があります... (247 chars), comments=0, image=yes
+2026-07-02T15:52:52.233232+09:00 [threads] container_id=17895766095511951 (image=yes, reply=no)
+2026-07-02T15:53:00.807717+09:00 [threads] POSTED main thread_id=18173740549423031
+2026-07-02T15:53:00.808551+09:00 [threads] DONE moved 2026-07-02-702 to posted (type=画像付き)

@@ -720,3 +720,25 @@ Claude Statusは6/23、複数モデルへのリクエストで7:08〜8:33 PTに�
 - ステータス: posted
 
 ---
+
+## 2026-07-02-702（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-07-02T15:53:00.808382+09:00
+- thread_id: 18173740549423031
+- URL: https://www.threads.com/@atelierbase_own/post/18173740549423031
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-07-02-702.png
+- 文面:
+
+正直、AIを並列で走らせるほど、最後に私が詰まる日があります。
+
+コードは速く出るのに、どれを先に見て、何をもって完了にするかが曖昧だと、確認だけが渋滞するんですよね。
+
+6月25日のarXiv論文「The Shift to Agentic AI」は、Codex利用者の10%超が週に3つ以上のエージェントを同時管理していると分析していました。エージェントは、作業を自走するAI担当のことです。
+
+増やす前に、出口を決める。
+あなたは先に決めるなら、完了条件ですか？それとも確認する順番ですか？
+
+- ステータス: posted
+
+---
