@@ -33,3 +33,26 @@ Business Insiderは6月30日、Codexでauto-reviewやsubagentsが想定より多
 - ステータス: pending
 
 ---
+## 2026-07-03-701
+- 種類: 画像付き
+- 投稿想定時刻: 朝（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-07-03（金）
+- 軸: 主軸（海外翻訳）
+- ソース: The Verge: OpenAI is teasing new hardware... for Codex (https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder)
+- 画像プロンプト: Use case: infographic-diagram Asset type: Japanese Threads insight card, square PNG 1024x1024. Primary request: Create a Threads-stopping Japanese insight card that summarizes this practical realization: as Codex / AI coding agent actions become easier to trigger through shortcuts or a physical controller, the real bottleneck moves to review and judgment, so define the condition for pressing the shortcut before adding more one-tap actions. This must be a post summary information card, not an atmosphere image. The viewer should understand the conclusion, background, and practical action from the image alone. Visible text: use ONLY these exact Japanese text blocks, no other visible words, no English letters, no dates, no source names, no research labels, no footer, no watermark: 1. Main headline, very large: 「押す前に 条件を決める」 2. Small subheadline: 「速さは、確認で止まる」 3. Left label: 「すぐ起動」 4. Center label: 「レビュー渋滞」 5. Right label: 「押していい条件」 Visual structure: a shortcut-button-to-checklist flow, not a fixed 3-column research card. Left side shows a clean oversized shortcut button being easy to press, flowing into a center area where multiple blank task cards pile up at a review checkpoint, then resolving into a calm checklist gate on the right. Use a curved path or diagonal flow so it reads as 「すぐ起動」 -> 「レビュー渋滞」 -> 「押していい条件」 without equal columns. The center should feel slightly tense and clogged; the right side should feel controlled and intentional. Design: modern Japanese business infographic for Threads, high legibility, off-white background, deep charcoal headline, blue shortcut-button accents, amber caution accents around the review bottleneck, green checklist accents on the right. Large typography, generous spacing, maximum 5 text blocks, short labels only. The main headline should feel like a reader pain/realization, not a product announcement. Avoid: generic AI atmosphere, random laptop, decorative-only scene, robot mascot, research summary card, dense UI, tiny explanatory text, product render, hardware hero shot, source/date labels. Do not include logos or brand marks. Important text rule: do not put any letters, numbers, pseudo-text, English, or extra Japanese inside the small task cards or checklist lines; use blank cards, dots, checkmarks, arrows, and simple shapes only. Ensure Japanese text is correctly spelled with no garbling, especially 「押す前に 条件を決める」「速さは、確認で止まる」「すぐ起動」「レビュー渋滞」「押していい条件」.
+- 画像ファイル: storage/images/2026-07-03-701.png
+- 文面:
+
+便利なボタンほど、押すのが怖くなる時があります。
+
+CodexやClaude Codeに任せる作業は、起動が簡単になるほど、あとで差分レビューと判断が重なるんですよね。
+
+The Vergeは6月29日、OpenAIがWork LouderとCodex向けショートカット端末を予告し、7月15日に詳細公開予定だと報じていました。ショートカットは、よく使う操作を一発で呼び出す仕組みです。
+
+気づきは、押しやすさより先に「押していい条件」を決めること。
+
+あなたなら最初にボタン化するのは、レビュー依頼ですか？それともテスト実行ですか？
+
+- ステータス: pending
+
+---
