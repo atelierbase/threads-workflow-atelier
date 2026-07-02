@@ -742,3 +742,26 @@ Claude Statusは6/23、複数モデルへのリクエストで7:08〜8:33 PTに�
 - ステータス: posted
 
 ---
+
+## 2026-07-03-701（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-07-03T08:30:44.995417+09:00
+- thread_id: 18071628251349453
+- URL: https://www.threads.com/@atelierbase_own/post/18071628251349453
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-07-03-701.png
+- 文面:
+
+便利なボタンほど、押すのが怖くなる時があります。
+
+CodexやClaude Codeに任せる作業は、起動が簡単になるほど、あとで差分レビューと判断が重なるんですよね。
+
+The Vergeは6月29日、OpenAIがWork LouderとCodex向けショートカット端末を予告し、7月15日に詳細公開予定だと報じていました。ショートカットは、よく使う操作を一発で呼び出す仕組みです。
+
+気づきは、押しやすさより先に「押していい条件」を決めること。
+
+あなたなら最初にボタン化するのは、レビュー依頼ですか？それともテスト実行ですか？
+
+- ステータス: posted
+
+---
