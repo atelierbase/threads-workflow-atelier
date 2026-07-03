@@ -33,3 +33,26 @@ Business Insiderは6月30日、Codexでauto-reviewやsubagentsが想定より多
 - ステータス: pending
 
 ---
+## 2026-07-03-702
+- 種類: 画像付き
+- 投稿想定時刻: 昼（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-07-03（金）
+- 軸: サブ軸1（自分の実例）
+- ソース: arXiv: The Shift to Agentic AI: Evidence from Codex (https://arxiv.org/abs/2606.26959)
+- 画像プロンプト: Create a square 1024x1024 PNG Japanese Threads insight card. Primary request: Make a Threads-stopping “気づきカード” summarizing this realization: AI coding agents like Codex are shifting from chat advice to delegated work, so the practical bottleneck is not asking smarter questions but deciding which small task to hand off first. This must be a post summary information card, not an atmosphere image. The viewer should understand the conclusion, background, and practical action from the image alone. Visible text: use ONLY these exact Japanese text blocks, no other visible words, no English letters, no dates, no source names, no research labels, no footer, no watermark: 1. Main headline, very large: 「相談で止まってない？」 2. Small subheadline: 「小さく渡すと、進み出す」 3. Left label: 「聞くだけ」 4. Center label: 「手順を渡す」 5. Right label: 「結果を確認」 Visual structure: a Before/After flow mixed with a small delegation loop, not a fixed 3-column research card. Left side should show a person or simple abstract user stuck in repeated question bubbles, feeling slightly blocked. A diagonal or curved transition moves into the center where one small task card is handed to an AI-agent workflow. Right side resolves into a clean review/check screen with checkmarks, showing the user confirming the result. It should read as 「聞くだけ」→「手順を渡す」→「結果を確認」, but avoid equal academic columns. Design: modern Japanese business infographic for Threads, high legibility, warm off-white background, deep charcoal headline, muted blue for the task handoff, amber for the stuck question-loop tension, green for review/confirmation. Large typography, generous spacing, maximum 5 text blocks, short labels only. The main headline should feel like a reader pain/realization, not a product announcement. Avoid: generic AI atmosphere, random laptop, decorative-only scene, robot mascot, research summary card, dense UI, tiny explanatory text, product logos, date/source labels, pseudo-dashboard clutter. Use simple UI cards, arrows, checkmarks, dots, and clean shapes only. Do not include any letters, numbers, pseudo-text, English, or extra Japanese inside small cards or UI shapes. Ensure Japanese text is correctly spelled with no garbling, especially 「相談で止まってない？」「小さく渡すと、進み出す」「聞くだけ」「手順を渡す」「結果を確認」.
+- 画像ファイル: storage/images/2026-07-03-702.png
+- 文面:
+
+AIに「相談」しているつもりで、実は仕事を渡せていない日があります。
+
+画面の前で何度も聞き返して、結局こちらが手を動かす。便利なのに、少し悔しいんですよね。
+
+6月25日のCodex利用データ分析では、2026年前半にアクティブユーザーが5倍超に増え、3つ以上のCodexエージェントを同時に動かす人も出ているそうです。agentic AIは、人の代わりに手順を進めるAIのこと。
+
+気づきは、「賢く聞く」より先に「どの作業を渡すか」を決めること。
+
+あなたはAIを使う時、まず相談から入る派ですか？それとも小さな作業を渡す派ですか？
+
+- ステータス: pending
+
+---
