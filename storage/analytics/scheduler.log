@@ -302,3 +302,9 @@ Code... (267 chars), comments=0, image=yes
 2026-07-03T08:30:36.595348+09:00 [threads] container_id=17895871266511951 (image=yes, reply=no)
 2026-07-03T08:30:44.994878+09:00 [threads] POSTED main thread_id=18071628251349453
 2026-07-03T08:30:44.995544+09:00 [threads] DONE moved 2026-07-03-701 to posted (type=画像付き)
+2026-07-03T15:44:49.200833+09:00 [threads] START slot=昼 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-07-03T15:44:49.200981+09:00 [threads] credentials: env vars
+2026-07-03T15:44:49.202080+09:00 [threads] Text preview: AIに「相談」しているつもりで、実は仕事を渡せていない日があ... (268 chars), comments=0, image=yes
+2026-07-03T15:44:55.764517+09:00 [threads] container_id=17895921024511951 (image=yes, reply=no)
+2026-07-03T15:45:04.048219+09:00 [threads] POSTED main thread_id=17967020597935760
+2026-07-03T15:45:04.048935+09:00 [threads] DONE moved 2026-07-03-702 to posted (type=画像付き)

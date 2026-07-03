@@ -765,3 +765,26 @@ The Vergeは6月29日、OpenAIがWork LouderとCodex向けショートカット�
 - ステータス: posted
 
 ---
+
+## 2026-07-03-702（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-07-03T15:45:04.048813+09:00
+- thread_id: 17967020597935760
+- URL: https://www.threads.com/@atelierbase_own/post/17967020597935760
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-07-03-702.png
+- 文面:
+
+AIに「相談」しているつもりで、実は仕事を渡せていない日があります。
+
+画面の前で何度も聞き返して、結局こちらが手を動かす。便利なのに、少し悔しいんですよね。
+
+6月25日のCodex利用データ分析では、2026年前半にアクティブユーザーが5倍超に増え、3つ以上のCodexエージェントを同時に動かす人も出ているそうです。agentic AIは、人の代わりに手順を進めるAIのこと。
+
+気づきは、「賢く聞く」より先に「どの作業を渡すか」を決めること。
+
+あなたはAIを使う時、まず相談から入る派ですか？それとも小さな作業を渡す派ですか？
+
+- ステータス: posted
+
+---
