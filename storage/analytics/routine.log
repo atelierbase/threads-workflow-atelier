@@ -8,3 +8,4 @@
 2026-06-17T09:58:10.975467+09:00 [generate-image-post] queued 2026-06-17-701 image=storage/images/2026-06-17-701.png
 2026-06-28T10:31:32+09:00 [codex-image2-queue] queued 2026-06-28-701 for slot 朝; note existing pending 2026-06-27-701 remains in the same slot, so Actions will process the first morning block before the new one
 2026-07-01T08:15:23+09:00 [codex-image2-queue] skip: missed target slot for 朝; GitHub Actions morning time 07:20 JST was more than 20 minutes ago, so no image generated and pending not appended
+2026-07-03T16:47:35+09:00 [codex-image2-queue] skip: existing night pending item 2026-07-01-703 remains in storage/stocks/pending.md; no image generated and pending not appended
