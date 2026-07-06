@@ -788,3 +788,26 @@ AIに「相談」しているつもりで、実は仕事を渡せていない日
 - ステータス: posted
 
 ---
+
+## 2026-07-06-702（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-07-06T16:58:35.096118+09:00
+- thread_id: 18147823000513609
+- URL: https://www.threads.com/@atelierbase_own/post/18147823000513609
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-07-06-702.png
+- 文面:
+
+正直、Codex用の専用ハードという話を見て、少し欲しくなりました。
+
+でも、自分の作業を振り返ると、先に決めるべきは「何をボタン化するか」なんですよね。
+
+The Vergeは6月30日、OpenAIがWork Louderと組んでCodex向け小型デバイスを予告したと報じていました。Codexは、コード生成や修正を任せられるAI開発エージェントです。
+
+気づきは、道具を増やす前に、毎週くり返す依頼を1つ選ぶこと。
+
+あなたなら最初にボタン化するのは、テスト実行ですか？それともレビュー依頼ですか？
+
+- ステータス: posted
+
+---

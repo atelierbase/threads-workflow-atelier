@@ -308,3 +308,9 @@ Code... (267 chars), comments=0, image=yes
 2026-07-03T15:44:55.764517+09:00 [threads] container_id=17895921024511951 (image=yes, reply=no)
 2026-07-03T15:45:04.048219+09:00 [threads] POSTED main thread_id=17967020597935760
 2026-07-03T15:45:04.048935+09:00 [threads] DONE moved 2026-07-03-702 to posted (type=画像付き)
+2026-07-06T16:58:22.448231+09:00 [threads] START slot=昼 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-07-06T16:58:22.448399+09:00 [threads] credentials: env vars
+2026-07-06T16:58:22.449788+09:00 [threads] Text preview: 正直、Codex用の専用ハードという話を見て、少し欲しくなり... (252 chars), comments=0, image=yes
+2026-07-06T16:58:26.875038+09:00 [threads] container_id=17896416462511951 (image=yes, reply=no)
+2026-07-06T16:58:35.095422+09:00 [threads] POSTED main thread_id=18147823000513609
+2026-07-06T16:58:35.096280+09:00 [threads] DONE moved 2026-07-06-702 to posted (type=画像付き)
