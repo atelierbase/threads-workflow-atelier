@@ -33,3 +33,26 @@ Business Insiderは6月30日、Codexでauto-reviewやsubagentsが想定より多
 - ステータス: pending
 
 ---
+## 2026-07-06-702
+- 種類: 画像付き
+- 投稿想定時刻: 昼（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-07-06（月）
+- 軸: サブ軸1（自分の実例）
+- ソース: The Verge: OpenAI is teasing new hardware that's probably for Codex (https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder)
+- 画像プロンプト: Use case: infographic-diagram Asset type: Japanese Threads insight card, square PNG 1024x1024. Primary request: Create a Threads-stopping Japanese insight card that summarizes this practical realization: before buying or optimizing new Codex hardware shortcuts, first choose which recurring AI-agent task is worth turning into a one-touch workflow. This must be a post summary card, not an atmosphere image. The viewer should understand the conclusion, background, and practical action from the image alone. Visible text: use ONLY these exact Japanese text blocks, no other visible words, no English, no dates, no source names, no research labels, no footer, no watermark: 1. Main headline, very large: 「ボタンより先に 任せる仕事」 2. Small subheadline: 「道具の前に、反復タスクを決める」 3. Small label: 「迷う」 4. Small label: 「選ぶ」 5. Small label: 「押す」 Visual structure: an emotional decision flow, not a fixed 3-column research card. Show a cluttered pile of possible AI-agent tasks on the left as abstract sticky notes and small task chips, a clear narrowing funnel or spotlight in the center, and a calm single-action button/workflow tile on the right. It should read as 「迷う」→「選ぶ」→「押す」, but avoid looking like an academic slide or a generic process diagram. The card should feel practical, warm, and businesslike. Style/medium: modern Japanese business infographic, crisp vector-like raster illustration, high legibility, large typography, generous spacing. Color palette: off-white background, deep charcoal headline, restrained teal for selected workflow, soft amber for decision tension, small muted red accents only for hesitation, plenty of white space. Avoid dominant purple/blue gradients and avoid beige-only palette. Composition/framing: square 1024x1024, strong first-viewport readability on Threads mobile, maximum 5 text blocks, sub-elements limited to three. Constraints: Japanese text must be correctly spelled with no garbling, especially 「ボタンより先に 任せる仕事」「反復タスク」「迷う」「選ぶ」「押す」. Do not make source name, date, or research label the focus. Avoid: generic AI atmosphere, random laptop, decorative-only scene, robot mascot, dense UI, tiny explanatory text, fixed three-column report card, academic research summary, source/date labels, malformed Japanese text.
+- 画像ファイル: storage/images/2026-07-06-702.png
+- 文面:
+
+正直、Codex用の専用ハードという話を見て、少し欲しくなりました。
+
+でも、自分の作業を振り返ると、先に決めるべきは「何をボタン化するか」なんですよね。
+
+The Vergeは6月30日、OpenAIがWork Louderと組んでCodex向け小型デバイスを予告したと報じていました。Codexは、コード生成や修正を任せられるAI開発エージェントです。
+
+気づきは、道具を増やす前に、毎週くり返す依頼を1つ選ぶこと。
+
+あなたなら最初にボタン化するのは、テスト実行ですか？それともレビュー依頼ですか？
+
+- ステータス: pending
+
+---
