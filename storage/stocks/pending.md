@@ -33,3 +33,26 @@ Business Insiderは6月30日、Codexでauto-reviewやsubagentsが想定より多
 - ステータス: pending
 
 ---
+## 2026-07-08-701
+- 種類: 画像付き
+- 投稿想定時刻: 朝（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-07-08（水）
+- 軸: 主軸（海外翻訳） #1
+- ソース: arXiv: Adoption and Impact of AI Developer Tools in an Enterprise: https://arxiv.org/abs/2607.01418
+- 画像プロンプト: Create a square 1024x1024 PNG Japanese Threads insight card. This is a Threads-stopping practical realization card, not a research summary card and not an atmosphere image. The viewer should understand the conclusion, background, and practical action from the image alone. Core insight: AI coding agents like Claude Code / Copilot CLI do not spread just because licenses or tools are distributed. Adoption starts when one visible success example makes coworkers think "I can try that too." Use ONLY these exact visible Japanese text blocks, no other words, no English, no dates, no source names, no research labels, no footer, no watermark: 1. Main headline, very large: 「配るだけでは 広がらない」 2. Small subheadline: 「見える成功例から始まる」 3. Small label: 「1人で試す」 4. Small label: 「成果を見せる」 5. Small label: 「小さく広げる」 Visual structure: a before-to-after realization flow, not a fixed three-column card. Left side: muted gray scene of many unused tool cards or licenses sitting still, expressing "distributed but unused" without extra words. Center: one small bright success spark/card becoming visible. Right side: a gentle ripple expanding to a few teammates, showing practical spread. Use a curved path from left to center to right so it reads as 「1人で試す」→「成果を見せる」→「小さく広げる」. Keep it human and operational, like a founder/team workflow insight. Design style: modern Japanese business infographic, high legibility, off-white background, deep charcoal headline, muted gray for stagnation, warm yellow for visible success, calm blue-green for spreading adoption. Large typography, generous spacing, maximum 5 text blocks, short labels only. Avoid generic AI atmosphere, random laptop, decorative-only scene, robot mascot, dense UI, research paper layout, 3-column fixed research card. Ensure Japanese text is correctly spelled with no garbling, especially 「配るだけでは 広がらない」「見える成功例から始まる」「1人で試す」「成果を見せる」「小さく広げる」.
+- 画像ファイル: storage/images/2026-07-08-701.png
+- 文面:
+
+正直、AI開発エージェントは「導入すれば勝手に広がる」と思っていた時期があります。
+
+でも自分の周りで試しても、配っただけだと静かに止まるんですよね。
+
+7月1日に出たMicrosoftの大規模調査では、Claude CodeやCopilot CLIの初回利用は、同僚の利用が見えることに強く影響され、利用者はPRマージが約24%多かったそうです。
+
+気づきは、ツールより先に「見える成功例」を置くこと。
+
+あなたが最初に作るなら、1人の成功事例ですか？それともチーム全体のルールですか？
+
+- ステータス: pending
+
+---
