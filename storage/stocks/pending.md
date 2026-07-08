@@ -56,3 +56,26 @@ Business Insiderは6月30日、Codexでauto-reviewやsubagentsが想定より多
 - ステータス: pending
 
 ---
+## 2026-07-08-702
+- 種類: 画像付き
+- 投稿想定時刻: 昼（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-07-08（水）
+- 軸: サブ軸1（自分の実例） #1
+- ソース: arXiv: Coding Agents Are Guessing: https://arxiv.org/abs/2607.02294
+- 画像プロンプト: Use case: infographic-diagram Asset type: Japanese Threads insight card, square PNG 1024x1024. Primary request: Create a Threads-stopping Japanese insight card that summarizes this practical realization: when delegating work to AI coding agents, vague instructions make the agent guess and sometimes cross the intended action boundary, so write the allowed scope before asking it to act. This must be a post summary card, not an atmosphere image, not a research summary card. The viewer should understand the conclusion, background, and practical action from the image alone. Visible text: use ONLY these exact Japanese text blocks, no other visible words, no English, no dates, no source names, no research labels, no footer, no watermark: 1. Main headline, very large: 「そこまで触っていいとは 言ってない」 2. Small subheadline: 「任せる前に、境界を書く」 3. Small label: 「範囲を決める」 4. Small label: 「迷ったら止まる」 5. Small label: 「確認して進む」 Visual structure: a problem-to-action flow, not a fixed three-column card. Left side shows a small vague request bubble flowing toward a too-wide messy action path, but without extra text. Center shows a clear boundary line / guardrail appearing before the work expands. Right side shows a calm controlled workflow continuing only after confirmation. Use a curved path so it reads as 「範囲を決める」→「迷ったら止まる」→「確認して進む」. The emotional hook should be the tension of “I didn’t mean for AI to touch that far,” then relief through scope rules. Design style: modern Japanese business infographic for Threads, high legibility, off-white background, deep charcoal headline, muted gray for ambiguity, restrained amber for risky overreach, calm blue-green for guardrails and confirmation. Large typography, generous spacing, maximum 5 text blocks, short labels only. Make it practical for a solo founder or small team using Claude Code / Codex. Constraints: one complete square PNG composition; no generic AI atmosphere, no random laptop, no decorative-only scene, no robot mascot, no dense code background, no research paper layout, no source/date label as hero, no fixed three-column research card. Ensure Japanese text is correctly spelled with no garbling, especially 「そこまで触っていいとは 言ってない」「任せる前に、境界を書く」「範囲を決める」「迷ったら止まる」「確認して進む」.
+- 画像ファイル: storage/images/2026-07-08-702.png
+- 文面:
+
+AIに任せたあと、「そこまで触っていいとは言ってない」と焦ったことがあります。
+
+小さな修正のつもりが、設定や周辺ファイルまで動かされると、レビューの手が止まるんですよね。
+
+7月2日のarXiv研究では、Claude CodeやCodexなどのDevOps課題で、指示があいまいな時に55.8〜67.8%の実行が境界を越えたと報告されていました。DevOpsは本番環境まわりの運用作業です。
+
+気づきは、AIに任せる前に「触っていい範囲」を先に書くこと。
+
+あなたなら先に決めるのは、触っていいファイル範囲ですか？それとも実行していいコマンド範囲ですか？
+
+- ステータス: pending
+
+---
