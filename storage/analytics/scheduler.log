@@ -314,3 +314,9 @@ Code... (267 chars), comments=0, image=yes
 2026-07-06T16:58:26.875038+09:00 [threads] container_id=17896416462511951 (image=yes, reply=no)
 2026-07-06T16:58:35.095422+09:00 [threads] POSTED main thread_id=18147823000513609
 2026-07-06T16:58:35.096280+09:00 [threads] DONE moved 2026-07-06-702 to posted (type=画像付き)
+2026-07-08T15:09:27.961823+09:00 [threads] START slot=昼 (source=POST_SLOT) dry_run=False skip_jitter=False
+2026-07-08T15:09:27.961981+09:00 [threads] credentials: env vars
+2026-07-08T15:09:27.962573+09:00 [threads] Text preview: AIに任せたあと、「そこまで触っていいとは言ってない」と焦っ... (278 chars), comments=0, image=yes
+2026-07-08T15:09:32.684483+09:00 [threads] container_id=17896730763511951 (image=yes, reply=no)
+2026-07-08T15:09:40.764179+09:00 [threads] POSTED main thread_id=17982070340858762
+2026-07-08T15:09:40.765036+09:00 [threads] DONE moved 2026-07-08-702 to posted (type=画像付き)

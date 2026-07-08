@@ -811,3 +811,26 @@ The Vergeは6月30日、OpenAIがWork Louderと組んでCodex向け小型デバ�
 - ステータス: posted
 
 ---
+
+## 2026-07-08-702（Threads自動配信 / GitHub Actions）
+- プラットフォーム: Threads
+- 種類: 画像付き
+- 投稿日時: 2026-07-08T15:09:40.764848+09:00
+- thread_id: 17982070340858762
+- URL: https://www.threads.com/@atelierbase_own/post/17982070340858762
+- 画像: https://raw.githubusercontent.com/atelierbase/threads-workflow-atelier/main/storage/images/2026-07-08-702.png
+- 文面:
+
+AIに任せたあと、「そこまで触っていいとは言ってない」と焦ったことがあります。
+
+小さな修正のつもりが、設定や周辺ファイルまで動かされると、レビューの手が止まるんですよね。
+
+7月2日のarXiv研究では、Claude CodeやCodexなどのDevOps課題で、指示があいまいな時に55.8〜67.8%の実行が境界を越えたと報告されていました。DevOpsは本番環境まわりの運用作業です。
+
+気づきは、AIに任せる前に「触っていい範囲」を先に書くこと。
+
+あなたなら先に決めるのは、触っていいファイル範囲ですか？それとも実行していいコマンド範囲ですか？
+
+- ステータス: posted
+
+---
