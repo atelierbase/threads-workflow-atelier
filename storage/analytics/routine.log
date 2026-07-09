@@ -15,3 +15,4 @@
 2026-07-07T09:50:02+09:00 [codex-image2-queue] skip: existing lunch pending item 2026-07-06-702 remains in storage/stocks/pending.md; no image generated and pending not appended
 2026-07-08T16:56:59+09:00 [codex-image2-queue] skip: existing night pending item 2026-07-01-703 remains in storage/stocks/pending.md; no image generated and pending not appended
 2026-07-09T14:39:03+09:00 [codex-image2-queue] skip: missed target slot for 昼; GitHub Actions lunch time 12:20 JST was more than 20 minutes ago, so no image generated and pending not appended
+2026-07-09T16:58:07+09:00 [codex-image2-queue] skip: existing night pending item 2026-07-01-703 remains in storage/stocks/pending.md; remote fetch failed with DNS resolution error, no image generated and pending not appended
