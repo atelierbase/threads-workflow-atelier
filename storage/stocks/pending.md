@@ -55,3 +55,26 @@ Business Insiderは6月30日、Codexでauto-reviewやsubagentsが想定より多
 - ステータス: pending
 
 ---
+## 2026-07-10-702
+- 種類: 画像付き
+- 投稿想定時刻: 昼（image2生成済み・GitHub Actions配信）
+- 想定日: 2026-07-10（金）
+- 軸: サブ軸1（自分の実例） #1
+- ソース: Business Insider: https://www.businessinsider.com/openai-codex-chatgpt-app-releases-gpt-5-6-models-2026-7
+- 画像プロンプト: Use case: infographic-diagram Asset type: Japanese Threads insight card, square PNG 1024x1024. Primary request: Create a Threads-stopping Japanese insight card that summarizes this practical realization: AI coding agents are expanding from coding-only helpers into broader work agents, so before delegating, define the business workflow and hand off one small task first. This must be a post summary card, not an atmosphere image, not a research card. The viewer should understand the conclusion, background, and practical action from the image alone. Visible text: use ONLY these exact Japanese text blocks, no other visible words, no English, no dates, no source names, no research labels, no footer, no watermark: 1. Main headline, very large: 「どこから任せる？」 2. Small subheadline: 「開発だけでなく、仕事の流れへ」 3. Small label: 「迷う」 4. Small label: 「切り分ける」 5. Small label: 「小さく渡す」 Visual structure: a confusion-to-action flow, not a fixed three-column research card. Left side: a tangled cluster of work items and small windows, expressing the feeling of not knowing where to delegate first. Center: a clear divider or trimming line that turns the tangle into one named workflow segment. Right side: a small clean task card moving toward an AI-agent-like neutral work queue, expressing a controlled first handoff. Use a curved or stepped path so it reads naturally as 「迷う」→「切り分ける」→「小さく渡す」 without looking academic. Design style: modern Japanese business infographic, high legibility, off-white background, deep charcoal headline, muted gray for confusion, calm teal/blue for workflow clarity, warm yellow accent for the small first handoff. Large typography, generous spacing, maximum 5 text blocks, short labels only. The main headline should feel like a reader pain/葛藤. Avoid generic AI atmosphere, random laptop, decorative-only scene, robot mascot, dense UI, research paper layout, 3-column fixed card. Ensure Japanese text is correctly spelled with no garbling, especially 「どこから任せる？」「開発だけでなく、仕事の流れへ」「迷う」「切り分ける」「小さく渡す」.
+- 画像ファイル: storage/images/2026-07-10-702.png
+- 文面:
+
+正直、Codexを「開発だけの相棒」と見ていたので、最近ちょっと考え直しました。
+
+自分の仕事でも、文章、表、調査、修正がつながると、どこから任せるか迷うんですよね。
+
+Business Insiderは7月10日、OpenAIがChatGPTデスクトップにCodexを統合し、Work modeでファイル修正やブラウザ操作まで広げる動きだと報じていました。
+
+気づきは、AIに仕事を渡す前に「開発」ではなく「ひと続きの業務」として切り分けること。
+
+あなたなら最初に任せるのは、資料づくりですか？それとも小さな修正作業ですか？
+
+- ステータス: pending
+
+---
