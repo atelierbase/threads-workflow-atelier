@@ -22,3 +22,4 @@
 2026-07-13T09:36:14+09:00 [codex-image2-queue] skip: missed target slot for 朝; GitHub Actions morning time 07:20 JST was more than 20 minutes ago, so no image generated and pending not appended
 2026-07-13T09:47:41+09:00 [codex-image2-queue] skip: existing lunch pending item 2026-07-10-702 remains in storage/stocks/pending.md; no image generated and pending not appended
 2026-07-13T18:08:53+09:00 [codex-image2-queue] skip: existing night pending item 2026-07-01-703 remains in storage/stocks/pending.md; no image generated and pending not appended
+2026-07-14T09:17:50+09:00 [codex-image2-queue] skip: missed target slot for 朝; GitHub Actions morning time 07:20 JST was more than 20 minutes ago, existing morning pending item 2026-07-08-701 also remains, so no image generated and pending not appended
